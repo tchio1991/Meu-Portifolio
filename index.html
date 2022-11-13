@@ -19,6 +19,28 @@
         </script>
 
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function startTime()
+        {
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        // adicione um zero na frente de números<10
+        m=checkTime(m);
+        s=checkTime(s);
+        document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+        t=setTimeout('startTime()',500);
+        }
+        function checkTime(i)
+        {
+        if (i<10)
+        {
+        i="0" + i;
+        }
+        return i;
+        }
+        </script>
     <style>
         p {
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -86,8 +108,8 @@ li {
     
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md navbar-light" style="background:#102db1;position: fixed; width:100%;z-index:99;">
+<body onload="startTime()">
+    <nav class="navbar navbar-expand-md navbar-light" style="background:#033f70;position: fixed; width:100%;z-index:99;">
         <a class="btn btn-sm btn-outline-primary" href="#voltar" title="Home" style="color:white;height:42px; width:165px;font-size:20px;">Thiago Cardoso</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
             aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,6 +130,10 @@ li {
                 <li>
                     <a href="#contato" class="btn btn-sm btn-outline-primary" title="Contato" style="color:white;height:42px; width:165px;font-size:20px;">Contato</a>
                 </li>
+                <li>
+                    <a href="#voltar" class="btn btn-sm btn-outline-primary" title="Relogio" id="txt" style="color:white;height:42px; width:165px;font-size:20px;"></a>
+                </li>
+                
             </ul>
         </div>
     </nav>
@@ -313,7 +339,7 @@ li {
         </div>
     </section>
 
-    <footer class="text-center" style="background:linear-gradient(200deg, #086fc4 0%, #061096 100%);padding:0px; margin:0px">
+    <footer class="text-center" style="background-color:#033f70;padding:0px; margin:0px">
         <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">Copyright 2022
         </p>
     </footer>
