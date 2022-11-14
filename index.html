@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -20,6 +20,7 @@
 
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
+        // Relogio da pagina
         function startTime()
         {
         var today=new Date();
@@ -41,6 +42,7 @@
         return i;
         }
         </script>
+    
     <style>
         p {
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -110,8 +112,7 @@ li {
 
 <body onload="startTime()">
     <nav class="navbar navbar-expand-md navbar-light" style="background:#033f70;position: fixed; width:100%;z-index:99;">
-        <a class="btn btn-sm btn-outline-primary" href="#voltar" title="Home" style="color:white;height:42px; width:165px;font-size:20px;margin-right:3px;">Thiago Cardoso</a>
-        <a href="#voltar" class="btn btn-sm btn-outline-primary" title="Relogio" id="txt" style="color:white;height:42px; width:165px;font-size:20px;margin-left:3px;"></a>
+        <a href="#voltar" class="btn btn-sm btn-outline-primary" id="txt" style="color:white;height:42px; width:165px; font-size: 20px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
             aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -122,6 +123,9 @@ li {
 
             </ul>
             <ul class="navbar-nav">
+                <li>
+                    <a class="btn btn-sm btn-outline-primary" href="#voltar" title="Home" style="color:white;height:42px; width:165px;font-size:20px;">Thiago Cardoso</a>
+                </li>
                 <li>
                     <a href="#projetos" class="btn btn-sm btn-outline-primary" title="Projetos" style="color:white;height:42px; width:165px;font-size:20px;">Projetos</a>
                 </li>
