@@ -106,13 +106,47 @@ li {
     color: #042b96;
 }
 
+
+a {
+color:white;
+text-decoration:none;
+font-weight:bold
+}
+
+[aria-label] {
+position: relative;
+}
+
+[aria-label]::after {
+content: attr(aria-label);
+display: none;
+position: absolute;
+top: 110%;
+left: 0px;
+z-index: 5000;
+pointer-events: none;
+padding: 8px 10px;
+text-decoration: none;
+font-size:15px;
+color: #fff;
+background-color:#277dee;
+border-radius:5px;
+border: 1px solid white;
+}
+
+[aria-label]:hover::after {
+display: block;
+}
+
+
+
     </style>
     
 </head>
 
 <body onload="startTime()">
     <nav class="navbar navbar-expand-md navbar-light" style="background:#033f70;position: fixed; width:100%;z-index:99;">
-        <a href="#voltar" class="btn btn-sm btn-outline-primary" id="txt" style="color:white;height:42px; width:165px; font-size: 20px;"></a>
+        <a href="#voltar" class="btn btn-sm btn-outline-primary" aria-label="Horário do Servidor" id="txt" style="color:white;height:42px; width:165px; font-size: 20px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
             aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -124,16 +158,16 @@ li {
             </ul>
             <ul class="navbar-nav">
                 <li>
-                    <a class="btn btn-sm btn-outline-primary" href="#voltar" title="Home" style="color:white;height:42px; width:165px;font-size:20px;">Thiago Cardoso</a>
+                    <a class="btn btn-sm btn-outline-primary" href="#voltar" aria-label="Seja bem vindo a minha pagina pessoal" style="color:white;height:42px; width:165px;font-size:20px;">Thiago Cardoso</a>
                 </li>
                 <li>
-                    <a href="#projetos" class="btn btn-sm btn-outline-primary" title="Projetos" style="color:white;height:42px; width:165px;font-size:20px;">Projetos</a>
+                    <a href="#projetos" class="btn btn-sm btn-outline-primary" aria-label="Veja os meus principais projetos" style="color:white;height:42px; width:165px;font-size:20px;">Projetos</a>
                 </li>
                 <li>
-                    <a href="#sobre-mim" class="btn btn-sm btn-outline-primary" title="Sobre mim" style="color:white;height:42px; width:165px;font-size:20px;">Sobre mim</a>
+                    <a href="#sobre-mim" class="btn btn-sm btn-outline-primary" aria-label="Veja uma breve história sobre mim" style="color:white;height:42px; width:165px;font-size:20px;">Sobre mim</a>
                 </li>
                 <li>
-                    <a href="#contato" class="btn btn-sm btn-outline-primary" title="Contato" style="color:white;height:42px; width:165px;font-size:20px;">Contato</a>
+                    <a href="#contato" class="btn btn-sm btn-outline-primary" aria-label="Meu contado principal" style="color:white;height:42px; width:165px;font-size:20px;">Contato</a>
                 </li>
                 
             </ul>
@@ -148,10 +182,10 @@ li {
             <p class="lead" style="color:white !important;">Desenvolvedor Full Stack | HTML5 | CSS3 | JavaScript | PHP | Java | C# | VB.NET | .NET | Sou estudante de Analise e Desenvolvimento de Sistemas, atualmente estou no segundo periodo.
             </p>
             <p>
-                <a href="https://drive.google.com/file/d/1QMN0-qtYoD64_FCOsbR-vnsbfUoaruoz/view?usp=sharing" target="_blank" title="Visualizar Currículo" class="btn btn-sm btn-outline-success" style="height:auto; width:auto;font-size:20px;">Visualizar Currículo</a>
+                <a href="https://drive.google.com/file/d/1QMN0-qtYoD64_FCOsbR-vnsbfUoaruoz/view?usp=sharing" target="_blank" aria-label="Acesse o meu curriculo em PDF" class="btn btn-sm btn-outline-success" style="height:auto; width:auto;font-size:20px;">Visualizar Currículo</a>
             </p>
-            <a href="https://github.com/tchio1991" target="_blank" title="Github" class="btn btn-sm btn-outline-success"><img src="imagem/github_logo_icon_147285.png" alt="Github" style="height:30px; width:auto;"></a>
-            <a href="https://www.linkedin.com/in/thiagocardoso91/" target="_blank" title="Linkedin" class="btn btn-sm btn-outline-primary"><img src="imagem/linkedin.png" alt="linkedin" style="height:30px; width:auto;"></a>
+            <a href="https://github.com/tchio1991" target="_blank" aria-label="Acesse o meu perfil no Github" class="btn btn-sm btn-outline-success"><img src="imagem/github_logo_icon_147285.png" alt="Github" style="height:30px; width:auto;"></a>
+            <a href="https://www.linkedin.com/in/thiagocardoso91/" target="_blank" aria-label="Acesse o meu perfil no linkedIn" class="btn btn-sm btn-outline-primary"><img src="imagem/linkedin.png" alt="linkedin" style="height:30px; width:auto;"></a>
         </div>
     </section>
 
@@ -161,7 +195,7 @@ li {
             <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-4 box-shadow" style="box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)">
-                        <a href="https://github.com/tchio1991/Desafio-Dio-Poo-Java" title="Projeto Dio Java - POO(Programação Orientada a objetos" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
+                        <a href="https://github.com/tchio1991/Desafio-Dio-Poo-Java" title="Desafio Aprendendo POO - (Programação Orientada a Objetos)" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/POO em Java.png" data-holder-rendered="true"
                             style="height:auto; width:100%; display: block;"></a>
@@ -175,8 +209,8 @@ li {
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="https://github.com/tchio1991/Desafio-Dio-Poo-Java" title="Ver Projeto" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
-                                    <a href="https://www.dio.me/certificate/7DDACBEE/share" title="Ver Credencial" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Credencial</button></a>
+                                    <a href="https://github.com/tchio1991/Desafio-Dio-Poo-Java" aria-label="Ver o codigo fonte hospedado no github"  target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
+                                    <a href="https://www.dio.me/certificate/7DDACBEE/share" aria-label="Ver o meu certificado" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Credencial</button></a>
                                 </div>
                                 <small class="text-muted">Projeto Dio Java - POO</small>
                             </div>
@@ -198,8 +232,8 @@ li {
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="https://github.com/tchio1991/Desafio-Dio-Spring-Framework" title="Ver projeto" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
-                                    <a href="https://www.dio.me/certificate/AB74590A/share" title="Ver Credencial" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Credencial</button></a>
+                                    <a href="https://github.com/tchio1991/Desafio-Dio-Spring-Framework" aria-label="Ver o codigo fonte hospedado no github" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
+                                    <a href="https://www.dio.me/certificate/AB74590A/share" aria-label="Ver o meu certificado" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Credencial</button></a>
                                 </div>
                                 <small class="text-muted">Projeto Spring Framework</small>
                             </div>
@@ -215,7 +249,7 @@ li {
             <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-4 box-shadow" style="box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)">
-                        <a href="https://tchio1991.github.io/Gerador-de-Senhas/" title="Gerador de Senhas" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
+                        <a href="https://tchio1991.github.io/Gerador-de-Senhas/" title="Gerador de senhas" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/imagem2.gif" data-holder-rendered="true"
                             style="height:auto; width:100%; display: block;"></a>
@@ -229,8 +263,8 @@ li {
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="https://tchio1991.github.io/Gerador-s/" title="Ver Projeto" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
-                                    <a href="https://github.com/tchio1991/Gerador-de-Senhas" title="Ver codigo" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button></a>
+                                    <a href="https://tchio1991.github.io/Gerador-s/" aria-label="Ver o meu projeto no browser" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
+                                    <a href="https://github.com/tchio1991/Gerador-de-Senhas" aria-label="Ver o codigo font no github" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button></a>
                                 </div>
                                 <small class="text-muted">Projeto JavaScript</small>
                             </div>
@@ -253,8 +287,8 @@ li {
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="https://tchio1991.github.io/Calculadora-JS/" title="Ver Projeto" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
-                                    <a href="https://github.com/tchio1991/Gerador-de-Senhas" title="Ver Código" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button></a>
+                                    <a href="https://tchio1991.github.io/Calculadora-JS/" aria-label="Ver o meu projeto no browser" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
+                                    <a href="https://github.com/tchio1991/Gerador-de-Senhas" aria-label="Ver o codigo font no github" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button></a>
                                 </div>
                                 <small class="text-muted">Projeto JavaScript</small>
                             </div>
@@ -285,8 +319,8 @@ li {
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="https://tchio1991.github.io/Calculador-IMC/" title="Ver Projeto" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
-                                    <a href="https://github.com/tchio1991/Calculador-IMC" title="Ver codigo" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button></a>
+                                    <a href="https://tchio1991.github.io/Calculador-IMC/" aria-label="Ver o meu projeto no browser" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
+                                    <a href="https://github.com/tchio1991/Calculador-IMC" aria-label="Ver o codigo font no github" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button></a>
                                 </div>
                                 <small class="text-muted">Projeto JavaScript</small>
                             </div>
@@ -309,7 +343,7 @@ li {
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="https://github.com/tchio1991/Pedra-papel-e-tesoura" title="Ver Código" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button></a>
+                                    <a href="https://github.com/tchio1991/Pedra-papel-e-tesoura" aria-label="Ver o codigo font no github" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button></a>
                                 </div>
                                 <small class="text-muted">Projeto C Sharp</small>
                             </div>
@@ -336,7 +370,7 @@ li {
             <div class="container-fluid">
                 <h3 style="padding-top:90px;" class="text-center titulosBrancos">Disponível para oportunidades</h3>
                 <h4 style="padding-bottom:90px;margin-bottom: 0px;color:white;" class="text-center"><a
-                        href="mailto:thgbruno2@gmail.com" style="color:rgb(187, 219, 247)">thgbruno2@gmail.com</a></h4>
+                        href="mailto:thgbruno2@gmail.com" aria-label="Meu email para contato" style="color:rgb(187, 219, 247)">thgbruno2@gmail.com</a><a href="#voltar"  aria-label="Voltar para o topo da pagina" class="btn btn-sm btn-outline-success" style="height:auto; width:50px;font-size:30px;position:relative;left:350px;">↑</a></h4>
             </div>
         </div>
     </section>
