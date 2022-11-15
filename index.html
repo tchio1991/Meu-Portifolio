@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Meu portifólio - Thiago Cardoso</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -17,136 +19,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
         </script>
-
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        // Relogio da pagina
-        function startTime()
-        {
-        var today=new Date();
-        var h=today.getHours();
-        var m=today.getMinutes();
-        var s=today.getSeconds();
-        // adicione um zero na frente de números<10
-        m=checkTime(m);
-        s=checkTime(s);
-        document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-        t=setTimeout('startTime()',500);
-        }
-        function checkTime(i)
-        {
-        if (i<10)
-        {
-        i="0" + i;
-        }
-        return i;
-        }
-        </script>
-    
-    <style>
-        p {
-    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-
-   .foto-perfil {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-   }
-
-   .icones {
-    padding-left: 10px;
-   }
-
-   .titulosBrancos {
-    text-decoration: underline;
-    text-underline-position: under;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
-}
-
-  .titulos {
-    text-decoration: underline;
-    text-underline-position: under;
-    padding-bottom: 40px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #051147
-}
-
-.paragrafoBrancos {
-    color: white !important;
-}
-
-
-.jumbotron {
-    margin-bottom: 15px;
-}
-
-html {
-    scroll-behavior: smooth;
-    
-}
-
-p {
-    color: rgb(5, 5, 5) !important;
-}
-
-.corPrimaria {
-    background: linear-gradient(180deg, #033f70 0%, #020533 100%);
-}
-
-.itemMenu {
-    color: white;
-}
-
-li {
-    color: #042b96;
-}
-
-
-a {
-color:white;
-text-decoration:none;
-font-weight:bold
-}
-
-[aria-label] {
-position: relative;
-}
-
-[aria-label]::after {
-content: attr(aria-label);
-display: none;
-position: absolute;
-top: 110%;
-left: 0px;
-z-index: 5000;
-pointer-events: none;
-padding: 8px 10px;
-text-decoration: none;
-font-size:15px;
-color: #fff;
-background-color:#277dee;
-border-radius:5px;
-border: 1px solid white;
-}
-
-[aria-label]:hover::after {
-display: block;
-}
-
-
-
-    </style>
-    
 </head>
 
 <body onload="startTime()">
     <nav class="navbar navbar-expand-md navbar-light" style="background:#033f70;position: fixed; width:100%;z-index:99;">
-        <a href="#voltar" class="btn btn-sm btn-outline-primary" aria-label="Horário do Servidor" id="txt" style="color:white;height:42px; width:165px; font-size: 20px;"></a>
+        <a href="#voltar" class="btn btn-sm btn-outline-primary" aria-label="Horário do servidor" id="txt" style="color:white;height:42px; width:165px; font-size: 20px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
             aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -179,7 +57,7 @@ display: block;
         <div class="container" id="voltar">
             <a href="imagem/Thiago.png" target="_blank" title="Thiago"><img src="imagem/Thiago.png" class="foto-perfil" alt="Thiago"></a>
             <h1 class="jumbotron-heading" style="color:white;text-transform: uppercase;">Thiago Cardoso</h1>
-            <p class="lead" style="color:white !important;">Desenvolvedor Full Stack | HTML5 | CSS3 | JavaScript | PHP | Java | C# | VB.NET | .NET | Sou estudante de Analise e Desenvolvimento de Sistemas, atualmente estou no segundo periodo.
+            <p class="lead" style="color:white !important;">Desenvolvedor Full Stack em Formação | HTML5 | CSS3 | JavaScript | PHP | Java | C# | .NET | Sou estudante de Analise e Desenvolvimento de Sistemas, atualmente estou no segundo periodo.
             </p>
             <p>
                 <a href="https://drive.google.com/file/d/1QMN0-qtYoD64_FCOsbR-vnsbfUoaruoz/view?usp=sharing" target="_blank" aria-label="Acesse o meu curriculo em PDF" class="btn btn-sm btn-outline-success" style="height:auto; width:auto;font-size:20px;">Visualizar Currículo</a>
@@ -210,7 +88,7 @@ display: block;
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <a href="https://github.com/tchio1991/Desafio-Dio-Poo-Java" aria-label="Ver o codigo fonte hospedado no github"  target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
-                                    <a href="https://www.dio.me/certificate/7DDACBEE/share" aria-label="Ver o meu certificado" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Credencial</button></a>
+                                    <a href="https://www.dio.me/certificate/7DDACBEE/share" aria-label="Ver Credencial" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Credencial</button></a>
                                 </div>
                                 <small class="text-muted">Projeto Dio Java - POO</small>
                             </div>
@@ -233,7 +111,7 @@ display: block;
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <a href="https://github.com/tchio1991/Desafio-Dio-Spring-Framework" aria-label="Ver o codigo fonte hospedado no github" target="_blank"><button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
-                                    <a href="https://www.dio.me/certificate/AB74590A/share" aria-label="Ver o meu certificado" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Credencial</button></a>
+                                    <a href="https://www.dio.me/certificate/AB74590A/share" aria-label="Ver Credencial" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Ver Credencial</button></a>
                                 </div>
                                 <small class="text-muted">Projeto Spring Framework</small>
                             </div>
