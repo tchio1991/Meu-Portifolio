@@ -91,3 +91,30 @@ border: 1px solid white;
 [aria-label]:hover::after {
 display: block;
 }
+
+
+
+#progress-container {
+    background:#033f70;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  
+  #progress-bar-container {
+    width: 100%;
+    height: 5px
+  }
+  
+  #progress-bar {
+    height: 5px;
+    background-image: -webkit-linear-gradient(90deg, #66ff00, #c7e907);
+    background-image: linear-gradient(90deg, #ff00ff, #f80404);
+    width: 0%;
+  }
+
+  .content {
+    height: 5px;
+  }
+  
