@@ -56,10 +56,6 @@ p {
     color: white;
 }
 
-li {
-    color: #042b96;
-}
-
 
 a {
 color:white;
@@ -109,8 +105,7 @@ display: block;
   
   #progress-bar {
     height: 5px;
-    background-image: -webkit-linear-gradient(90deg, #66ff00, #c7e907);
-    background-image: linear-gradient(90deg, #ff00ff, #f80404);
+    background-image: linear-gradient(90deg, #ebb748, #f80404);
     width: 0%;
   }
 
@@ -118,3 +113,70 @@ display: block;
     height: 5px;
   }
   
+  .Caixa1{
+    position: fixed;
+    top: 0; bottom: 0; 
+    left:0; right:50%;
+    margin:auto;
+    z-index:1;
+    width: 500px;
+    height:350px;
+    padding: 15px;
+    border: solid 2px #000000;
+    background:white;
+    display: none;
+    border-radius: 10%;
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+  }
+
+  .Caixa2{
+    position: fixed;
+    top: 10%; bottom: 0; 
+    left:50%; right:0;
+    margin:auto;
+    z-index:1;
+    width: 500px;
+    height:530px;
+    padding: 15px;
+    border: solid 2px #000000;
+    background:white;
+    display: none;
+    border-radius: 10%;
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+  }
+
+  .Caixa3{
+    position: fixed;
+    top: 10%; bottom: 0; 
+    left:0; right:35%;
+    margin:auto;
+    z-index:1;
+    width: 248px;
+    height:341px;
+    padding: 15px;
+    display: none;
+  }
+
+  .Caixa4{
+    position: fixed;
+    top: 10%; bottom: 0; 
+    left:0; right:50%;
+    margin:auto;
+    z-index:1;
+    width: 500px;
+    height:226px;
+    padding: 15px;
+    display: none;
+  }
+
+  .Caixa5{
+    position: fixed;
+    top: 5%; bottom: 0; 
+    left:50%; right:0;
+    margin:auto;
+    z-index:1;
+    width: 600px;
+    height:269px;
+    padding: 15px;
+    display: none;
+  }
