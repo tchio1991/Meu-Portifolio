@@ -117,7 +117,7 @@
       
         });
       }
-      const titulo = document.querySelector('.jumbotron-heading');
+      const titulo = document.getElementById('Nome1');
       Primeiro(titulo);
 
       function Segundo(elemento){
@@ -131,5 +131,5 @@
     
       });
     }
-    const titulo2 = document.querySelector('.lead');
+    const titulo2 = document.getElementById('Nome2');
     Segundo(titulo2);

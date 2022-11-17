@@ -245,14 +245,14 @@ display: block;
     box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
   }
 
-  .jumbotron-heading:after{
+  #Nome1:after{
     content: '|';
     margin-left: 5px;
     opacity: 1;
     animation: pisca .7s infinite;
    }
    
-   .lead:after{
+   #Nome2:after{
     content: '|';
     margin-left: 5px;
     opacity: 1;
