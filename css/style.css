@@ -245,3 +245,28 @@ display: block;
     box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
   }
 
+  .jumbotron-heading:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+   
+   .lead:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+
+   /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+   
+   @keyframes pisca{
+       0%, 100%{
+           opacity: 1;
+       }
+       50%{
+           opacity: 0;
+       }
+   }
+

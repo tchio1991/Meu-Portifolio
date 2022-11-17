@@ -104,3 +104,32 @@
         function fechar9(){
           document.getElementById('Caixa9').style.display =  'none';
         }
+         
+        // Animação No texto
+        function Primeiro(elemento2){
+          const textoArray = elemento2.innerHTML.split('');
+          elemento2.innerHTML = ' ';
+          textoArray.forEach(function(letra2, j){   
+            
+          setTimeout(function(){
+              elemento2.innerHTML += letra2;
+          }, 100 * j)
+      
+        });
+      }
+      const titulo = document.querySelector('.jumbotron-heading');
+      Primeiro(titulo);
+
+      function Segundo(elemento){
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML = ' ';
+        textoArray.forEach(function(letra, i){   
+          
+        setTimeout(function(){
+            elemento.innerHTML += letra;
+        }, 40 * i)
+    
+      });
+    }
+    const titulo2 = document.querySelector('.lead');
+    Segundo(titulo2);
