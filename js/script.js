@@ -73,3 +73,34 @@
           document.getElementById('Caixa5').style.display =  'none';
         }
 
+         // PopUp caixa6
+         function abrir6(){
+          document.getElementById('Caixa6').style.display = 'block';
+        }
+        function fechar6(){
+          document.getElementById('Caixa6').style.display =  'none';
+        }
+
+        // PopUp caixa7
+        function abrir7(){
+          document.getElementById('Caixa7').style.display = 'block';
+        }
+        function fechar7(){
+          document.getElementById('Caixa7').style.display =  'none';
+        }
+
+        // PopUp caixa8
+        function abrir8(){
+          document.getElementById('Caixa8').style.display = 'block';
+        }
+        function fechar8(){
+          document.getElementById('Caixa8').style.display =  'none';
+        }
+
+         // PopUp caixa9
+         function abrir9(){
+          document.getElementById('Caixa9').style.display = 'block';
+        }
+        function fechar9(){
+          document.getElementById('Caixa9').style.display =  'none';
+        }

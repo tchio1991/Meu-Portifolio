@@ -116,7 +116,7 @@ display: block;
   .Caixa1{
     position: fixed;
     top: 0; bottom: 0; 
-    left:0; right:50%;
+    left:0; right:55%;
     margin:auto;
     z-index:1;
     width: 500px;
@@ -132,7 +132,7 @@ display: block;
   .Caixa2{
     position: fixed;
     top: 10%; bottom: 0; 
-    left:50%; right:0;
+    left:55%; right:0;
     margin:auto;
     z-index:1;
     width: 500px;
@@ -180,3 +180,68 @@ display: block;
     padding: 15px;
     display: none;
   }
+
+  .Caixa6{
+    position: fixed;
+    top: 0; bottom: 0; 
+    left:0; right:55%;
+    margin:auto;
+    z-index:1;
+    width: 400px;
+    height:280px;
+    padding: 15px;
+    border: solid 2px #000000;
+    background:white;
+    display: none;
+    border-radius: 10%;
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+  }
+
+  .Caixa7{
+    position: fixed;
+    top: 0; bottom: 0; 
+    left:55%; right:0;
+    margin:auto;
+    z-index:1;
+    width: 400px;
+    height:280px;
+    padding: 15px;
+    border: solid 2px #000000;
+    background:white;
+    display: none;
+    border-radius: 10%;
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+  }
+
+  .Caixa8{
+    position: fixed;
+    top: 0; bottom: 0; 
+    left:0; right:55%;
+    margin:auto;
+    z-index:1;
+    width: 400px;
+    height:300px;
+    padding: 15px;
+    border: solid 2px #000000;
+    background:white;
+    display: none;
+    border-radius: 10%;
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+  }
+
+  .Caixa9{
+    position: fixed;
+    top: 0; bottom: 0; 
+    left:55%; right:0;
+    margin:auto;
+    z-index:1;
+    width: 400px;
+    height:300px;
+    padding: 15px;
+    border: solid 2px #000000;
+    background:white;
+    display: none;
+    border-radius: 10%;
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+  }
+
