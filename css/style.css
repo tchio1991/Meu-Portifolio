@@ -246,20 +246,20 @@ display: block;
   }
 
   #Nome1:after{
-    content: '.';
+    content: '|';
     margin-left: 2px;
     opacity: 1;
     animation: pisca .7s infinite;
    }
    
    #Nome2:after{
-    content: '.';
+    content: '|';
     margin-left: 2px;
     opacity: 1;
     animation: pisca .7s infinite;
    }
 
-   /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+   /* Animação aplicada ao content referente a id *Nome1 e Nome2* resultando num efeito de cursor piscando. */
    
    @keyframes pisca{
        0%, 100%{
@@ -303,20 +303,20 @@ display: block;
   }
 
   #DateD:after{
-    content: '.';
+    content: '|';
     margin-left: 2px;
     opacity: 1;
     animation: pisca .7s infinite;
    }
    
    #DateR:after{
-    content: '.';
+    content: '|';
     margin-left: 2px;
     opacity: 1;
     animation: pisca .7s infinite;
    }
 
-   /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+   /* Animação aplicada ao content referente a id *DateD e DateR* resultando num efeito de cursor piscando. */
    
    @keyframes pisca{
        0%, 100%{

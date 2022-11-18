@@ -134,7 +134,7 @@
           
         setTimeout(function(){
             elemento.innerHTML += letra;
-        }, 40 * i)
+        }, 30 * i)
     
       });
     }
