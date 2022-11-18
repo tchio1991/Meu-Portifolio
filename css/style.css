@@ -246,15 +246,15 @@ display: block;
   }
 
   #Nome1:after{
-    content: '|';
-    margin-left: 5px;
+    content: '.';
+    margin-left: 2px;
     opacity: 1;
     animation: pisca .7s infinite;
    }
    
    #Nome2:after{
-    content: '|';
-    margin-left: 5px;
+    content: '.';
+    margin-left: 2px;
     opacity: 1;
     animation: pisca .7s infinite;
    }
@@ -304,14 +304,14 @@ display: block;
 
   #DateD:after{
     content: '.';
-    margin-left: 3px;
+    margin-left: 2px;
     opacity: 1;
     animation: pisca .7s infinite;
    }
    
    #DateR:after{
     content: '.';
-    margin-left: 3px;
+    margin-left: 2px;
     opacity: 1;
     animation: pisca .7s infinite;
    }
