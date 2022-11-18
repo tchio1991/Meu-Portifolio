@@ -148,11 +148,11 @@ display: block;
   .Caixa3{
     position: fixed;
     top: 10%; bottom: 0; 
-    left:0; right:35%;
+    left:0; right:38%;
     margin:auto;
     z-index:1;
-    width: 248px;
-    height:341px;
+    width: 283px;
+    height:400px;
     padding: 15px;
     display: none;
   }
@@ -270,3 +270,36 @@ display: block;
        }
    }
 
+   .DateD{
+    position: fixed;
+    top:0; bottom: 73%; 
+    left:0; right:71%;
+    margin:auto;
+    z-index:1;
+    width: 356px;
+    height:50px;
+    padding: 15px;
+    background-color:#277dee;
+    border-radius:5px;
+    border: 1px solid white;
+    display: none;
+    padding: 8px 10px;
+  }
+
+  .DateR{
+    position: fixed;
+    top:0; bottom: 73%; 
+    left:0; right:71%;
+    margin:auto;
+    z-index:1;
+    width: 356px;
+    height:50px;
+    padding: 15px;
+    background-color:#277dee;
+    border-radius:5px;
+    border: 1px solid white;
+    display: none;
+    padding: 8px 10px;
+  }
+
+  

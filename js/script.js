@@ -5,10 +5,17 @@
         var h=today.getHours();
         var m=today.getMinutes();
         var s=today.getSeconds();
+        var d=today.getDate();
+        var g=today.getMonth();
+        var y=today.getFullYear();
+
         // adicione um zero na frente de números<10
+        h=checkTime(h);
         m=checkTime(m);
         s=checkTime(s);
-        document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+        d=checkTime(d);
+        g=checkTime(g);
+        document.getElementById('txt').innerHTML= h+":"+m+":"+s + " " + d+"/"+(g+1)+"/"+y;
         t=setTimeout('startTime()',500);
         }
         function checkTime(i)
@@ -133,3 +140,72 @@
     }
     const titulo2 = document.getElementById('Nome2');
     Segundo(titulo2);
+
+    
+    // PopUp Dia, mês e ano.
+    function abrir10(){
+    var today=new Date();
+    var d=today.getDate();
+    var dy=today.getDay();
+    var g=today.getMonth();
+    var y=today.getFullYear();
+
+    var Day = new Array('Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado');
+    var Dia = Day[dy];
+    var M = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
+    var Mes = M[g];
+      
+    document.getElementById('DateD').innerHTML= Dia + "," + " " +d+ " " + "de" + " " + Mes + " " + " " + "de" + " " + y;
+    document.getElementById('DateD').style.display = 'block';
+    }
+    
+    
+    function fechar10(){
+    var today=new Date();
+    var d=today.getDate();
+    var dy=today.getDay();
+    var g=today.getMonth();
+    var y=today.getFullYear();
+
+    var Day = new Array('Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado');
+    var Dia = Day[dy];
+    var M = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
+    var Mes = M[g];
+
+    document.getElementById('DateD').innerHTML= Dia + "," + " " +d+ " " + "de" + " " + Mes + " " + " " + "de" + " " + y;
+    document.getElementById('DateD').style.display =  'none';
+    }
+
+     // PopUp Dia, mês e ano ingles.
+     function abrir11(){
+      var today=new Date();
+      var d=today.getDate();
+      var dy=today.getDay();
+      var g=today.getMonth();
+      var y=today.getFullYear();
+  
+      var Day = new Array('Sunday','Monday','Tuesday','Wednesday','	Thursday','Friday','Saturday');
+      var Dia = Day[dy];
+      var M = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+      var Mes = M[g];
+        
+      document.getElementById('DateR').innerHTML= Dia + "," + " " + Mes+ " " + "in" + " " + d + " " + " " + "in" + " " + y;
+      document.getElementById('DateR').style.display = 'block';
+      }
+      
+      
+      function fechar11(){
+      var today=new Date();
+      var d=today.getDate();
+      var dy=today.getDay();
+      var g=today.getMonth();
+      var y=today.getFullYear();
+  
+      var Day = new Array('Sunday','Monday','Tuesday','Wednesday','	Thursday','Friday','Saturday');
+      var Dia = Day[dy];
+      var M = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+      var Mes = M[g];
+  
+      document.getElementById('DateR').innerHTML= Dia + "," + " " + Mes+ " " + "in" + " " + d + " " + " " + "in" + " " + y;
+      document.getElementById('DateR').style.display =  'none';
+      }
