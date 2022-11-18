@@ -276,7 +276,7 @@ display: block;
     left:0; right:71%;
     margin:auto;
     z-index:1;
-    width: 356px;
+    width: 365px;
     height:50px;
     padding: 15px;
     background-color:#277dee;
@@ -292,7 +292,7 @@ display: block;
     left:0; right:71%;
     margin:auto;
     z-index:1;
-    width: 356px;
+    width: 337px;
     height:50px;
     padding: 15px;
     background-color:#277dee;
@@ -302,4 +302,27 @@ display: block;
     padding: 8px 10px;
   }
 
-  
+  #DateD:after{
+    content: '.';
+    margin-left: 3px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+   
+   #DateR:after{
+    content: '.';
+    margin-left: 3px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+
+   /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+   
+   @keyframes pisca{
+       0%, 100%{
+           opacity: 1;
+       }
+       50%{
+           opacity: 0;
+       }
+   }

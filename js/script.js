@@ -157,6 +157,20 @@
       
     document.getElementById('DateD').innerHTML= Dia + "," + " " +d+ " " + "de" + " " + Mes + " " + " " + "de" + " " + y;
     document.getElementById('DateD').style.display = 'block';
+    // Animação No texto Date
+    function Animation(elemento3){
+      const textoArray = elemento3.innerHTML.split('');
+      elemento3.innerHTML = ' ';
+      textoArray.forEach(function(letra3, j){   
+        
+      setTimeout(function(){
+          elemento3.innerHTML += letra3;
+      }, 30 * j)
+  
+    });
+  }
+  const Animation1 = document.getElementById('DateD');
+  Animation(Animation1);
     }
     
     
@@ -191,6 +205,20 @@
         
       document.getElementById('DateR').innerHTML= Dia + "," + " " + Mes+ " " + "in" + " " + d + " " + " " + "in" + " " + y;
       document.getElementById('DateR').style.display = 'block';
+      // Animação No texto Date
+    function Animation(elemento3){
+      const textoArray = elemento3.innerHTML.split('');
+      elemento3.innerHTML = ' ';
+      textoArray.forEach(function(letra3, j){   
+        
+      setTimeout(function(){
+          elemento3.innerHTML += letra3;
+      }, 30 * j)
+  
+    });
+  }
+  const Animation1 = document.getElementById('DateR');
+  Animation(Animation1);
       }
       
       
@@ -209,3 +237,4 @@
       document.getElementById('DateR').innerHTML= Dia + "," + " " + Mes+ " " + "in" + " " + d + " " + " " + "in" + " " + y;
       document.getElementById('DateR').style.display =  'none';
       }
+      
