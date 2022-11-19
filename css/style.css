@@ -1,6 +1,83 @@
-p {
+    p {
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
+    
+    /*Sombra nas CaixasBox dos Projetos*/
+    #CaixaBox {
+      box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    }
+
+    /*Foto Caixa Div linkedin e github*/
+    #FotoGitLin {
+      box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+      border-radius:5%;
+    }
+
+    /*Icone linkedin e github*/
+    #BTgitLin {
+      height:30px; 
+      width:auto;
+    }
+ 
+    /*Tamanho do link vizualizar curriculo*/
+    #LinkCurriculo {
+      height:auto; 
+      width:auto;
+      font-size:20px;
+    }
+    
+    /*Janela da div POPUP Curriculo*/
+    #FotoCurriculo{
+      box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+      border-radius:5%;
+    }
+
+    /*Nome Principal*/
+    #Nome1{
+      color:white;
+      text-transform: uppercase;
+      font-size:33px;
+    }
+    
+    /*Texto Secundario*/
+    #Nome2 {
+      color:white !important;
+    }
+    
+    /*Div do menu fixado*/
+    #Menu3 {
+      background:#033f70;
+      position: fixed; 
+      width:100%;
+      z-index:99;
+    }
+    
+    /*Botão do menu responsivo*/
+    #Botao {
+      background-color:#033f70;
+      border: 1px solid white;
+    }
+
+    /* Menu statico */
+    #Menu2 {
+      color:white;
+      height:auto;
+      width:197px; 
+      font-size: 20px;
+      position:relative;
+      padding:4px 4px 4px 4px;
+    }
+
+    #txt {
+      color:white;
+      height:auto;
+      width:197px; 
+      font-size: 20px;
+      padding:4px 4px 4px 4px;
+      position:relative;
+    }
+    /* Menu statico */
+
 
    .foto-perfil {
     height:250px;
@@ -19,7 +96,7 @@ p {
     text-transform: uppercase;
     font-weight: 700;
     color: white;
-}
+  }
 
   .titulos {
     text-decoration: underline;
@@ -276,7 +353,7 @@ display: block;
     left:0; right:71%;
     margin:auto;
     z-index:1;
-    width: 365px;
+    width:265px;
     height:50px;
     padding: 15px;
     background-color:#277dee;
@@ -284,6 +361,8 @@ display: block;
     border: 1px solid white;
     display: none;
     padding: 8px 10px;
+    color:white;
+    font-size: 15px;
   }
 
   .DateR{
@@ -292,7 +371,7 @@ display: block;
     left:0; right:71%;
     margin:auto;
     z-index:1;
-    width: 337px;
+    width:265px;
     height:50px;
     padding: 15px;
     background-color:#277dee;
@@ -300,6 +379,8 @@ display: block;
     border: 1px solid white;
     display: none;
     padding: 8px 10px;
+    color:white;
+    font-size: 15px;
   }
 
   #DateD:after{

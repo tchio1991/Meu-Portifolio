@@ -32,12 +32,13 @@
 
     <!--Menu Fixo-->
     <div class="content"></div>
-    <nav class="navbar navbar-expand-md navbar-light" style="background:#033f70;position: fixed; width:100%;z-index:99;">
-        <a href="#voltar" class="btn btn-sm btn-outline-primary" onmouseover="abrir10();" onmouseout="fechar10();" id="txt" style="color:white;height:42px; width:197px; font-size: 20px;margin:0;left:0;right: 0;top:0;bottom:0;"></a>
-        <div id="DateD" class="DateD" style="color:white;font-size: 20px;">	
+    <nav class="navbar navbar-expand-md navbar-light" id="Menu3">
+        <a href="#voltar" class="btn btn-sm btn-outline-primary" onmouseover="abrir10();" onmouseout="fechar10();" id="txt">
+        </a>
+        <div id="DateD" class="DateD">	
         </div>
-        <button class="navbar-toggler" type="button" style="background-color:#277dee;border: 1px solid white;" data-toggle="collapse" data-target="#navbarsExample04"
-            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" id="Botao" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Expandir">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -46,20 +47,20 @@
 
             </ul>
             <ul class="navbar-nav">
-                <li>
-                    <a class="btn btn-sm btn-outline-primary" href="#voltar" aria-label="Seja bem vindo a minha pagina pessoal" style="color:white;height:42px; width:165px;font-size:20px;margin:0;left:0;right: 0;top:0;bottom:0;">Thiago Cardoso</a>
+                <li class="nav-item">
+                    <a href="#voltar" class="btn btn-sm btn-outline-primary" id="Menu2" aria-label="Seja bem vindo a minha pagina pessoal">Thiago Cardoso</a>
                 </li>
-                <li>
-                    <a href="#projetos" class="btn btn-sm btn-outline-primary" aria-label="Veja os meus principais projetos" style="color:white;height:42px; width:165px;font-size:20px;margin:0;left:0;right: 0;top:0;bottom:0;">Projetos</a>
+                <li class="nav-item">
+                    <a href="#projetos" class="btn btn-sm btn-outline-primary" id="Menu2" aria-label="Veja os meus principais projetos">Projetos</a>
                 </li>
-                <li>
-                    <a href="#sobre-mim" class="btn btn-sm btn-outline-primary" aria-label="Veja uma breve história sobre mim" style="color:white;height:42px; width:165px;font-size:20px;margin:0;left:0;right: 0;top:0;bottom:0;">Sobre mim</a>
+                <li class="nav-item">
+                    <a href="#sobre-mim" class="btn btn-sm btn-outline-primary" id="Menu2" aria-label="Veja uma breve história sobre mim">Sobre mim</a>
                 </li>
-                <li>
-                    <a href="#contato" class="btn btn-sm btn-outline-primary" aria-label="Meu contado principal" style="color:white;height:42px; width:165px;font-size:20px;margin:0;left:0;right: 0;top:0;bottom:0;">Contato</a>
+                <li class="nav-item">
+                    <a href="#contato" class="btn btn-sm btn-outline-primary" id="Menu2" aria-label="Meu contado principal">Contato</a>
                 </li>
-                <li>
-                    <a href="ingles.html" class="btn btn-sm btn-outline-primary" aria-label="Mudar para inglês" style="color:white;height:42px; width:165px;font-size:20px;margin:0;left:0;right: 0;top:0;bottom:0;">Mudar idioma</a>
+                <li class="nav-item">
+                    <a href="ingles.html" class="btn btn-sm btn-outline-primary" id="Menu2" aria-label="Mudar para inglês">Mudar idioma</a>
                 </li>
             </ul>
         </div>
@@ -67,25 +68,24 @@
     </nav>
     
     <section class="jumbotron text-center corPrimaria">
-        
         <div class="container" id="voltar">
             <a href="imagem/fotoperfil.jpg" target="_blank" title="Thiago"><img src="imagem/fotoperfil.jpg" class="foto-perfil" alt="Thiago"></a>
-            <h1 class="jumbotron-heading" id="Nome1" style="color:white;text-transform: uppercase;font-size:33px;">Thiago Cardoso</h1>
-            <p class="lead" id="Nome2" style="color:white !important;">Desenvolvedor Full Stack em Formação | HTML5 | CSS3 | JavaScript | PHP | MySQL | Java | C# | .NET | Sou estudante de Analise e Desenvolvimento de Sistemas, atualmente estou no segundo periodo.
+            <h1 class="jumbotron-heading" id="Nome1">Thiago Cardoso</h1>
+            <p class="lead" id="Nome2">Desenvolvedor Full Stack em Formação | HTML5 | CSS3 | JavaScript | PHP | MySQL | Java | C# | .NET | Sou estudante de Analise e Desenvolvimento de Sistemas, atualmente estou no segundo periodo.
             </p>
             <p>
-                <a href="https://drive.google.com/file/d/1QMN0-qtYoD64_FCOsbR-vnsbfUoaruoz/view?usp=sharing" aria-label="Acesse o meu curriculo em PDF" onmouseover="abrir3();" onmouseout="fechar3();" target="_blank" on class="btn btn-sm btn-outline-success" style="height:auto; width:auto;font-size:20px;">Visualizar Currículo</a>
+                <a href="https://drive.google.com/file/d/1QMN0-qtYoD64_FCOsbR-vnsbfUoaruoz/view?usp=sharing" aria-label="Acesse o meu curriculo em PDF" id="LinkCurriculo" onmouseover="abrir3();" onmouseout="fechar3();" target="_blank" on class="btn btn-sm btn-outline-success">Visualizar Currículo</a>
             </p>
             <div id="Caixa3" class="Caixa3">
-                <img src="imagem/Curriculo.jpg" style="box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);border-radius:5%;">	
+                <img src="imagem/Curriculo.jpg" id="FotoCurriculo">	
             </div>
-            <a href="https://github.com/tchio1991" target="_blank" aria-label="Acesse o meu perfil no Github" onmouseover="abrir4();" onmouseout="fechar4();" class="btn btn-sm btn-outline-success"><img src="imagem/github_logo_icon_147285.png" alt="Github" style="height:30px; width:auto;"></a>
-            <a href="https://www.linkedin.com/in/thiagocardoso91/" target="_blank" aria-label="Acesse o meu perfil no linkedIn" onmouseover="abrir5();" onmouseout="fechar5();" class="btn btn-sm btn-outline-primary"><img src="imagem/linkedin.png" alt="linkedin" style="height:30px; width:auto;"></a>
+            <a href="https://github.com/tchio1991" target="_blank" aria-label="Acesse o meu perfil no Github" onmouseover="abrir4();" onmouseout="fechar4();" class="btn btn-sm btn-outline-success"><img src="imagem/github_logo_icon_147285.png" id="BTgitLin" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/thiagocardoso91/" target="_blank" aria-label="Acesse o meu perfil no linkedIn" onmouseover="abrir5();" onmouseout="fechar5();" class="btn btn-sm btn-outline-primary"><img src="imagem/linkedin.png" id="BTgitLin" alt="linkedin"></a>
             <div id="Caixa4" class="Caixa4">
-                <img src="imagem/github.png" style="box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);border-radius:5%;">	
+                <img src="imagem/github.png" id="FotoGitLin">	
             </div>
             <div id="Caixa5" class="Caixa5">
-                <img src="imagem/linkedinInco.png" style="box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);border-radius:5%;">	
+                <img src="imagem/linkedinInco.png" id="FotoGitLin">	
             </div>
         </div>
     </section>
@@ -95,7 +95,7 @@
             <h2 class="text-center jumbotron-heading titulos">Meus Projetos</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card mb-4 box-shadow" style="box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)">
+                    <div class="card mb-4 box-shadow" id="CaixaBox">
                         <a href="https://github.com/tchio1991/Desafio-Dio-Poo-Java" onmouseover="abrir();" onmouseout="fechar();" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/POO em Java.png" data-holder-rendered="true"
@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card mb-4 box-shadow" style="box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)">
+                    <div class="card mb-4 box-shadow" id="CaixaBox">
                         <a href="https://github.com/tchio1991/Desafio-Dio-Spring-Framework" onmouseover="abrir1();" onmouseout="fechar1();" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/Spring Framework.png" data-holder-rendered="true"
@@ -174,7 +174,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card mb-4 box-shadow" style="box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)">
+                    <div class="card mb-4 box-shadow" id="CaixaBox">
                         <a href="https://tchio1991.github.io/Gerador-de-Senhas/" onmouseover="abrir6();" onmouseout="fechar6();" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/imagem2.gif" data-holder-rendered="true"
@@ -209,7 +209,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card mb-4 box-shadow" style="box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)">
+                    <div class="card mb-4 box-shadow" id="CaixaBox">
                         <a href="https://tchio1991.github.io/Calculadora-JS/" onmouseover="abrir7();" onmouseout="fechar7();" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/imagem3.gif" data-holder-rendered="true"
@@ -251,7 +251,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card mb-4 box-shadow" style="box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)">
+                    <div class="card mb-4 box-shadow" id="CaixaBox">
                         <a href="https://tchio1991.github.io/Calculador-IMC/" onmouseover="abrir8();" onmouseout="fechar8();" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/calculadora.gif" data-holder-rendered="true"
@@ -288,7 +288,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card mb-4 box-shadow" style="box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)">
+                    <div class="card mb-4 box-shadow" id="CaixaBox">
                         <a href="https://github.com/tchio1991/Pedra-papel-e-tesoura" onmouseover="abrir9();" onmouseout="fechar9();" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/CSharp.gif" data-holder-rendered="true"
