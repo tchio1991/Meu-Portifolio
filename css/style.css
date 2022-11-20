@@ -50,6 +50,7 @@
       position: fixed; 
       width:100%;
       z-index:99;
+      box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
     }
     
     /*Botão do menu responsivo*/
@@ -62,19 +63,22 @@
     #Menu2 {
       color:white;
       height:auto;
-      width:197px; 
+      width:189px; 
       font-size: 20px;
       position:relative;
       padding:4px 4px 4px 4px;
+      border: 1px solid white;
     }
-
+    
+    /*Relogio*/
     #txt {
       color:white;
       height:auto;
-      width:197px; 
+      width:189px; 
       font-size: 20px;
       padding:4px 4px 4px 4px;
       position:relative;
+      border: 1px solid white;
     }
     /* Menu statico */
 
@@ -385,14 +389,14 @@ display: block;
 
   #DateD:after{
     content: '|';
-    margin-left: 2px;
+    margin-left: 1px;
     opacity: 1;
     animation: pisca .7s infinite;
    }
    
    #DateR:after{
     content: '|';
-    margin-left: 2px;
+    margin-left: 1px;
     opacity: 1;
     animation: pisca .7s infinite;
    }
