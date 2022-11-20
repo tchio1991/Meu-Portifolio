@@ -1,3 +1,42 @@
+        /*Carregamento*/
+        var i = setInterval(function () {
+    
+        clearInterval(i);
+  
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("conteudo").style.display = "inline";
+        
+         // Animação No texto
+         function Primeiro(elemento2){
+          const textoArray = elemento2.innerHTML.split('');
+          elemento2.innerHTML = ' ';
+          textoArray.forEach(function(letra2, j){   
+            
+          setTimeout(function(){
+              elemento2.innerHTML += letra2;
+          }, 100 * j)
+      
+        });
+      }
+      const titulo = document.getElementById('Nome1');
+      Primeiro(titulo);
+
+      function Segundo(elemento){
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML = ' ';
+        textoArray.forEach(function(letra, i){   
+          
+        setTimeout(function(){
+            elemento.innerHTML += letra;
+        }, 30 * i)
+    
+      });
+    }
+    const titulo2 = document.getElementById('Nome2');
+    Segundo(titulo2);
+
+    }, 1300);
+
         // Relogio da pagina
         function startTime()
         {
@@ -37,7 +76,7 @@
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
-        document.getElementById("progress-bar").style.width = scrolled + "%";
+        document.getElementById("progress-bar").style.width = scrolled + "%";   
         }
         
         // PopUp caixa1
@@ -111,36 +150,6 @@
         function fechar9(){
           document.getElementById('Caixa9').style.display =  'none';
         }
-         
-        // Animação No texto
-        function Primeiro(elemento2){
-          const textoArray = elemento2.innerHTML.split('');
-          elemento2.innerHTML = ' ';
-          textoArray.forEach(function(letra2, j){   
-            
-          setTimeout(function(){
-              elemento2.innerHTML += letra2;
-          }, 100 * j)
-      
-        });
-      }
-      const titulo = document.getElementById('Nome1');
-      Primeiro(titulo);
-
-      function Segundo(elemento){
-        const textoArray = elemento.innerHTML.split('');
-        elemento.innerHTML = ' ';
-        textoArray.forEach(function(letra, i){   
-          
-        setTimeout(function(){
-            elemento.innerHTML += letra;
-        }, 30 * i)
-    
-      });
-    }
-    const titulo2 = document.getElementById('Nome2');
-    Segundo(titulo2);
-
     
     // PopUp Dia, mês e ano.
     function abrir10(){
@@ -157,6 +166,7 @@
       
     document.getElementById('DateD').innerHTML= Dia + "," + " " +d+ " " + "de" + " " + Mes + " " + " " + "de" + " " + y;
     document.getElementById('DateD').style.display = 'block';
+    
     // Animação No texto Date
     function Animation(elemento3){
       const textoArray = elemento3.innerHTML.split('');
@@ -205,6 +215,7 @@
         
       document.getElementById('DateR').innerHTML= Dia + "," + " " + Mes+ " " + "in" + " " + d + " " + " " + "in" + " " + y;
       document.getElementById('DateR').style.display = 'block';
+      
       // Animação No texto Date
     function Animation(elemento3){
       const textoArray = elemento3.innerHTML.split('');
@@ -237,4 +248,4 @@
       document.getElementById('DateR').innerHTML= Dia + "," + " " + Mes+ " " + "in" + " " + d + " " + " " + "in" + " " + y;
       document.getElementById('DateR').style.display =  'none';
       }
-      
+    

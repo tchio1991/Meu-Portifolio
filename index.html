@@ -20,9 +20,15 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
         </script>
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 
 <body onload="startTime()">
+    <!--Carregamento-->
+    <div id="loading">
+        <img src="imagem/loading.gif" id="ImgLoad" alt="Carregando..."/>
+    </div>
+    <div id="conteudo" style="display: none">
     <!--Barra de progresso-->
     <div id="progress-container">
         <div id="progress-bar-container">
@@ -31,7 +37,7 @@
     </div> 
 
     <!--Menu Fixo-->
-    <div class="content"></div>
+    <div class="content" id="voltar"></div>
     <nav class="navbar navbar-expand-md navbar-light" id="Menu3">
         <a href="#voltar" class="btn btn-sm btn-outline-primary" onmouseover="abrir10();" onmouseout="fechar10();" id="txt">
         </a>
@@ -68,7 +74,7 @@
     </nav>
     
     <section class="jumbotron text-center corPrimaria">
-        <div class="container" id="voltar">
+        <div class="container">
             <a href="imagem/fotoperfil.jpg" target="_blank" title="Thiago"><img src="imagem/fotoperfil.jpg" class="foto-perfil" alt="Thiago"></a>
             <h1 class="jumbotron-heading" id="Nome1">Thiago Cardoso</h1>
             <p class="lead" id="Nome2">Desenvolvedor Full Stack em Formação | HTML5 | CSS3 | JavaScript | PHP | MySQL | Java | C# | .NET | Sou estudante de Analise e Desenvolvimento de Sistemas, atualmente estou no segundo periodo.
@@ -98,8 +104,7 @@
                     <div class="card mb-4 box-shadow" id="CaixaBox">
                         <a href="https://github.com/tchio1991/Desafio-Dio-Poo-Java" onmouseover="abrir();" onmouseout="fechar();" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="imagem/POO em Java.png" data-holder-rendered="true"
-                            style="height:auto; width:100%; display: block;"></a>
+                            alt="Thumbnail [100%x225]" src="imagem/POO em Java.png" data-holder-rendered="true" id="ImgProje1"></a>
                             <!--Caixas do PopUP-->
                             <div id="Caixa1" class="Caixa1">
                                 <p><h5><b>Desafio Aprendendo POO na Prática</b></h5></p>
@@ -131,7 +136,7 @@
                         <a href="https://github.com/tchio1991/Desafio-Dio-Spring-Framework" onmouseover="abrir1();" onmouseout="fechar1();" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/Spring Framework.png" data-holder-rendered="true"
-                            style="height:auto; width: 100%; display: block;"></a>
+                            id="ImgProje1"></a>
                             <!--Caixas do PopUP-->
                             <div id="Caixa2" class="Caixa2">
                                 <p><h5><b>Desafio DIO Java Spring Framework</b></h5></p>
@@ -178,7 +183,7 @@
                         <a href="https://tchio1991.github.io/Gerador-de-Senhas/" onmouseover="abrir6();" onmouseout="fechar6();" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/imagem2.gif" data-holder-rendered="true"
-                            style="height:auto; width:100%; display: block;"></a>
+                            id="ImgProje1"></a>
                             <!--Caixas do PopUP-->
                             <div id="Caixa6" class="Caixa6">
                                 <p><h5><b>Gerador de Senhas, esse é um projeto que eu desenvolvi usando as tecnologias HTML, CSS e JavaScript.</b></h5></p>
@@ -213,7 +218,7 @@
                         <a href="https://tchio1991.github.io/Calculadora-JS/" onmouseover="abrir7();" onmouseout="fechar7();" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/imagem3.gif" data-holder-rendered="true"
-                            style="height: auto; width: 100%; display: block;"></a>
+                            id="ImgProje1"></a>
                             <!--Caixas do PopUP-->
                             <div id="Caixa7" class="Caixa7">
                                 <p><h5><b>Calculadora feito Utilzando a IDE Visual Code e utilizando as tecnologias HTML, CSS e JavaScript.</b></h5></p>
@@ -255,7 +260,7 @@
                         <a href="https://tchio1991.github.io/Calculador-IMC/" onmouseover="abrir8();" onmouseout="fechar8();" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/calculadora.gif" data-holder-rendered="true"
-                            style="height: auto; width:100%; display: block;"></a>
+                            id="ImgProje1"></a>
                             <!--Caixas do PopUP-->
                             <div id="Caixa8" class="Caixa8">
                                 <p><h5><b>Calculadora IMC feito no VS code utilizando as tecnologias HTML, CSS e JS.
@@ -292,7 +297,7 @@
                         <a href="https://github.com/tchio1991/Pedra-papel-e-tesoura" onmouseover="abrir9();" onmouseout="fechar9();" class="btn btn-sm btn-outline-success" target="_blank"><img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="imagem/CSharp.gif" data-holder-rendered="true"
-                            style="height: auto; width: 100%; display: block;"></a>
+                            id="ImgProje1"></a>
                             <!--Caixas do PopUP-->
                             <div id="Caixa9" class="Caixa9">
                                 <p><h5><b>Jogo: Pedra, papel e tesoura feito no visual studio utilizando windows forms interface.</b></h5></p>
@@ -338,17 +343,19 @@
     <section Id="contato" class="corPrimaria">
         <div class="corPrimaria">
             <div class="container-fluid">
-                <h3 style="padding-top:90px;" class="text-center titulosBrancos">Disponível para oportunidades</h3>
-                <h4 style="padding-bottom:90px;margin-bottom: 0px;color:white;" class="text-center"><a
-                        href="mailto:thgbruno2@gmail.com" aria-label="Meu email para contato" style="color:rgb(187, 219, 247)">thgbruno2@gmail.com</a></h4>
+                <h3 id="H3contato" class="text-center titulosBrancos">Disponível para oportunidades</h3>
+                <h4 id="h4contato" class="text-center"><a
+                        href="mailto:thgbruno2@gmail.com" aria-label="Meu email para contato" id="LinkContato">thgbruno2@gmail.com</a></h4>
             </div>
         </div>
     </section>
 
-    <footer class="text-center" style="background-color:#033f70;padding:0px; margin:0px">
-        <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">Copyright 2022
+    <footer class="text-center" id="Rodape">
+        <p id="ParaRodape">Copyright 2022
         </p>
     </footer>
+
+    </div>
 </body>
 
 </html>
