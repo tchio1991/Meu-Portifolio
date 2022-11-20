@@ -1,5 +1,10 @@
+    /*Paragrafos*/
     p {
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    #conteudo {
+      display: none;
     }
     
     /*Carregamento*/
