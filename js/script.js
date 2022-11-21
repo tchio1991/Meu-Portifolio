@@ -1,3 +1,32 @@
+        // Relogio da pagina
+        function startTime()
+        {
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        var d=today.getDate();
+        var g=today.getMonth();
+        var y=today.getFullYear();
+
+        // adicione um zero na frente de números<10
+        h=checkTime(h);
+        m=checkTime(m);
+        s=checkTime(s);
+        d=checkTime(d);
+        g=checkTime(g);
+        document.getElementById('txt').innerHTML= h+":"+m+":"+s + " " + d+"/"+(g+1)+"/"+y;
+        t=setTimeout('startTime()',500);
+        }
+        function checkTime(i)
+        {
+        if (i<10)
+        {
+        i="0" + i;
+        }
+        return i;
+        }
+
         /*Carregamento*/
         var i = setInterval(function () {
     
@@ -5,8 +34,8 @@
   
         document.getElementById("loading").style.display = "none";
         document.getElementById("conteudo").style.display = "inline";
-        
-         // Animação No texto
+      
+        // Animação No texto
          function Primeiro(elemento2){
           const textoArray = elemento2.innerHTML.split('');
           elemento2.innerHTML = ' ';
@@ -36,35 +65,6 @@
     Segundo(titulo2);
 
     }, 1300);
-
-        // Relogio da pagina
-        function startTime()
-        {
-        var today=new Date();
-        var h=today.getHours();
-        var m=today.getMinutes();
-        var s=today.getSeconds();
-        var d=today.getDate();
-        var g=today.getMonth();
-        var y=today.getFullYear();
-
-        // adicione um zero na frente de números<10
-        h=checkTime(h);
-        m=checkTime(m);
-        s=checkTime(s);
-        d=checkTime(d);
-        g=checkTime(g);
-        document.getElementById('txt').innerHTML= h+":"+m+":"+s + " " + d+"/"+(g+1)+"/"+y;
-        t=setTimeout('startTime()',500);
-        }
-        function checkTime(i)
-        {
-        if (i<10)
-        {
-        i="0" + i;
-        }
-        return i;
-        }
 
         /* Barra de progresso vai aumentando de acordo 
           com a rolagem da pagina 
