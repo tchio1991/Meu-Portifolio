@@ -34,12 +34,14 @@
     
     /*Sombra nas CaixasBox dos Projetos*/
     #CaixaBox {
-      box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     }
 
     /*Foto Caixa Div linkedin e github*/
     #FotoGitLin {
-      box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
       border-radius:5%;
     }
 
@@ -54,11 +56,29 @@
       height:auto; 
       width:auto;
       font-size:20px;
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transition: 0.8s;
+      -o-transition: 0.8s;
+      -moz-transition: 0.8s;
+       transition: 0.8s;
+    }
+     
+    #LinkCurriculo:hover {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
     }
     
     /*Janela da div POPUP Curriculo*/
     #FotoCurriculo{
-      box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
       border-radius:5%;
     }
 
@@ -98,6 +118,23 @@
       position:relative;
       padding:4px 4px 4px 4px;
       border: 1px solid white;
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transition: 0.8s;
+      -o-transition: 0.8s;
+      -moz-transition: 0.8s;
+       transition: 0.8s;
+    }
+
+    #Menu2:hover {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+    transform: translateY(-6px);
     }
     
     /*Relogio*/
@@ -109,6 +146,23 @@
       padding:4px 4px 4px 4px;
       position:relative;
       border: 1px solid white;
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transition: 0.8s;
+      -o-transition: 0.8s;
+      -moz-transition: 0.8s;
+       transition: 0.8s;
+    }
+
+    #txt:hover {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+    transform: translateY(-6px);
     }
     /* Menu statico */
 
@@ -117,6 +171,45 @@
     height:250px;
     width: 250;
     border-radius: 50%;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    -moz-transition: 0.8s;
+    transition: 0.8s;
+   }
+
+   .foto-perfil:hover {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   }
+
+   #BTflutuante {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    -moz-transition: 0.8s;
+    transition: 0.8s;
+   }
+
+   #BTflutuante:hover {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
    }
 
    .icones {
@@ -243,7 +336,7 @@ display: block;
   }
 
   #LinkContato {
-    color:rgb(187, 219, 247)
+    color:rgb(187, 219, 247);
   }
 
   #Rodape {
@@ -273,7 +366,8 @@ display: block;
     background:white;
     display: none;
     border-radius: 10%;
-    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
   }
 
   .Caixa2{
@@ -289,7 +383,8 @@ display: block;
     background:white;
     display: none;
     border-radius: 10%;
-    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
   }
 
   .Caixa3{
@@ -302,6 +397,7 @@ display: block;
     height:400px;
     padding: 15px;
     display: none;
+    
   }
 
   .Caixa4{
@@ -341,7 +437,8 @@ display: block;
     background:white;
     display: none;
     border-radius: 10%;
-    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
   }
 
   .Caixa7{
@@ -357,7 +454,8 @@ display: block;
     background:white;
     display: none;
     border-radius: 10%;
-    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
   }
 
   .Caixa8{
@@ -373,7 +471,8 @@ display: block;
     background:white;
     display: none;
     border-radius: 10%;
-    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
   }
 
   .Caixa9{
@@ -389,7 +488,8 @@ display: block;
     background:white;
     display: none;
     border-radius: 10%;
-    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77)
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
   }
 
   #Nome1:after{
@@ -423,7 +523,7 @@ display: block;
     left:0; right:71%;
     margin:auto;
     z-index:1;
-    width:370px;
+    width:auto;
     height:50px;
     padding: 15px;
     background-color:#277dee;
@@ -441,7 +541,7 @@ display: block;
     left:0; right:71%;
     margin:auto;
     z-index:1;
-    width:370px;
+    width:auto;
     height:50px;
     padding: 15px;
     background-color:#277dee;

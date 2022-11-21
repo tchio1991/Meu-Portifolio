@@ -4,7 +4,6 @@
         var today=new Date();
         var h=today.getHours();
         var m=today.getMinutes();
-        var s=today.getSeconds();
         var d=today.getDate();
         var g=today.getMonth();
         var y=today.getFullYear();
@@ -12,10 +11,9 @@
         // adicione um zero na frente de números<10
         h=checkTime(h);
         m=checkTime(m);
-        s=checkTime(s);
         d=checkTime(d);
         g=checkTime(g);
-        document.getElementById('txt').innerHTML= h+":"+m+":"+s + " " + d+"/"+(g+1)+"/"+y;
+        document.getElementById('txt').innerHTML= h+":"+m + " " + d+"/"+(g+1)+"/"+y;
         t=setTimeout('startTime()',500);
         }
         function checkTime(i)
