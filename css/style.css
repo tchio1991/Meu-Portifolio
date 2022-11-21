@@ -255,6 +255,7 @@
     height:250px;
     width: 250;
     border-radius: 50%;
+    margin-top:10px;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -290,8 +291,240 @@
     -moz-transition: 0.8s;
     transition: 0.8s;
    }
+   /*Carregamento da imagem do perfil*/
+   @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  .foto-perfil {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded .foto-perfil {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
 
+  /*Carregamento da imagem FotoCurriculo*/
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #FotoCurriculo {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #FotoCurriculo {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
 
+  /*Carregamento da imagem FotoGitLin*/
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #FotoGitLin {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #FotoGitLin {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
+
+  /*Carregamento da imagens caixas*/
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #ImgProje1 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #ImgProje1 {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
+  
+  /*Carregamento das janelas */
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #Caixa1 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa1 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #Caixa2 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa2 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #Caixa6 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa6 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #Caixa7 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa7 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #Caixa8 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa8 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #Caixa9 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa9 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #DateD{
+    opacity: 0;
+    animation: fade-in 1s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #DateD {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #DateR {
+    opacity: 0;
+    animation: fade-in 1s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #DateR {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  /*Botão Flutuante*/
    #BTflutuante {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);

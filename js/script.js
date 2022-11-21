@@ -61,8 +61,16 @@
     }
     const titulo2 = document.getElementById('Nome2');
     Segundo(titulo2);
+    
 
     }, 1300);
+     
+    /*Carregamento das imagens e janelas*/
+    document.addEventListener('DOMContentLoaded', function(){
+      document.querySelector('body')
+              .classList
+              .add('loaded');
+    });
 
         /* Barra de progresso vai aumentando de acordo 
           com a rolagem da pagina 
