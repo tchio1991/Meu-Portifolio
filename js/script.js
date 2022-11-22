@@ -255,4 +255,3 @@
       document.getElementById('DateR').style.display =  'none';
       }
       
-    
