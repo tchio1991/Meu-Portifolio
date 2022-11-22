@@ -254,4 +254,3 @@
       document.getElementById('DateR').innerHTML= Dia + "," + " " + Mes+ " " + "in" + " " + d + " " + " " + "in" + " " + y;
       document.getElementById('DateR').style.display =  'none';
       }
-      
