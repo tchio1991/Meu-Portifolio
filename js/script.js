@@ -70,8 +70,8 @@
       document.querySelector('body')
               .classList
               .add('loaded');
-    });
-
+    }); 
+    
         /* Barra de progresso vai aumentando de acordo 
           com a rolagem da pagina 
           e diminui de acordo com que a pagina suba pra cima */
@@ -238,7 +238,7 @@
   Animation(Animation1);
       }
       
-      
+      // Data completa da Div Date
       function fechar11(){
       var today=new Date();
       var d=today.getDate();
@@ -254,4 +254,5 @@
       document.getElementById('DateR').innerHTML= Dia + "," + " " + Mes+ " " + "in" + " " + d + " " + " " + "in" + " " + y;
       document.getElementById('DateR').style.display =  'none';
       }
+      
     
