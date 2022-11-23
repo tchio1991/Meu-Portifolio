@@ -47,7 +47,7 @@
 
     /*Icone linkedin e github*/
     #BTgitLin {
-      height:30px; 
+      height:35px; 
       width:auto;
     }
  
@@ -194,7 +194,7 @@
     #Menu2 {
       color:white;
       height:auto;
-      width:195px; 
+      width:175px; 
       font-size: 20px;
       position:relative;
       padding:4px 4px 4px 4px;
@@ -221,7 +221,7 @@
     #Menu2:active {
       color:white;
       height:auto;
-      width:195px; 
+      width:175px; 
       font-size: 20px;
       position:relative;
       padding:4px 4px 4px 4px;
@@ -241,7 +241,7 @@
     #txt {
       color:white;
       height:auto;
-      width:195px; 
+      width:175px; 
       font-size: 20px;
       padding:4px 4px 4px 4px;
       position:relative;
@@ -268,7 +268,7 @@
     #txt:active {
       color:white;
       height:auto;
-      width:195px; 
+      width:175px; 
       font-size: 20px;
       padding:4px 4px 4px 4px;
       position:relative;
@@ -290,7 +290,6 @@
     height:250px;
     width: auto;
     border-radius: 50%;
-    margin-top:10px;
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -788,6 +787,101 @@
   body.loaded footer:nth-child(2){ animation-delay: 1s }
   body.loaded footer:nth-child(3){ animation-delay: 2s }
   body.loaded footer:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #contato2 {
+    opacity: 0;
+    animation: fade-in 1.1s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #contato2 {
+    animation-play-state: running
+  }
+  
+  body.loaded section:nth-child(2){ animation-delay: 1s }
+  body.loaded section:nth-child(3){ animation-delay: 2s }
+  body.loaded section:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #progress-container {
+    opacity: 0;
+    animation: fade-in 1.1s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #progress-container {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+  
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #progress-bar-container {
+    opacity: 0;
+    animation: fade-in 1.1s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #progress-bar-container {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #progress-bar {
+    opacity: 0;
+    animation: fade-in 1.1s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #progress-bar {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #voltar {
+    opacity: 0;
+    animation: fade-in 1.1s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #voltar {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
   /*-----------------------------------------------*/
 
   /*Botão Flutuante*/
@@ -824,11 +918,11 @@
    }
 
    .icones {
-    padding-left: 10px;
+    padding-left: 20px;
    }
 
    .titulosBrancos {
-    text-decoration: underline;
+    text-decoration:none;
     text-underline-position: under;
     padding-bottom: 20px;
     text-transform: uppercase;
@@ -837,7 +931,7 @@
   }
 
   .titulos {
-    text-decoration: underline;
+    text-decoration: none;
     text-underline-position: under;
     padding-bottom: 30px;
     text-transform: uppercase;
@@ -851,7 +945,8 @@
 
 
 .jumbotron {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 html {
@@ -870,7 +965,6 @@ p {
 .itemMenu {
     color: white;
 }
-
 
 a {
 color:white;
@@ -1189,3 +1283,4 @@ display: block;
            opacity: 0;
        }
    }
+   
