@@ -132,6 +132,60 @@
       border-radius:5%;
     }
 
+    #FotoHtml5{
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      border-radius:5%;
+    }
+
+    #FotoCss{
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      border-radius:5%;
+    }
+
+    #FotoJs{
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      border-radius:5%;
+    }
+
+    #FotoPHP{
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      border-radius:5%;
+    }
+
+    #FotoJava{
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      border-radius:5%;
+    }
+
+    #FotoNet{
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      border-radius:5%;
+    }
+
+    #FotoSQL{
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      border-radius:5%;
+    }
+
+    #FotoMySQL{
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      border-radius:5%;
+    }
+
+    #FotoCSharp1{
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      border-radius:5%;
+    }
+    
     /*Nome Principal*/
     #Nome1{
       color:white;
@@ -405,7 +459,178 @@
   body.loaded img:nth-child(2){ animation-delay: 1s }
   body.loaded img:nth-child(3){ animation-delay: 2s }
   body.loaded img:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
   
+  #FotoHtml5 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #FotoHtml5 {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #FotoCss {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #FotoCss {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #FotoJs {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #FotoJs {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #FotoPHP {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #FotoPHP {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
+  
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #FotoJava {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #FotoJava {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #FotoNet {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #FotoNet {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
+  
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #FotoSQL {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #FotoSQL {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #FotoMySQL {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #FotoMySQL {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #FotFotoCSharp1 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #FotoCSharp1 {
+    animation-play-state: running
+  }
+  
+  body.loaded img:nth-child(2){ animation-delay: 1s }
+  body.loaded img:nth-child(3){ animation-delay: 2s }
+  body.loaded img:nth-child(4){ animation-delay: 3s }
+
   /*Carregamento das janelas */
   @keyframes fade-in {
     from { opacity: 0 }
@@ -514,6 +739,177 @@
   }
   
   body.loaded #Caixa9 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #Caixa12 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa12 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #Caixa13 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa13 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #Caixa14 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa14 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #Caixa15 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa15 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+  
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #Caixa16 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa16 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #Caixa17 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa17 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+  
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #Caixa18 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa18 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #Caixa19 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa19 {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+
+  #Caixa20 {
+    opacity: 0;
+    animation: fade-in 1.5s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #Caixa20 {
     animation-play-state: running
   }
   
@@ -827,7 +1223,7 @@
    }
 
    .titulosBrancos {
-    text-decoration:none;
+    text-decoration:underline;
     text-underline-position: under;
     padding-bottom: 20px;
     text-transform: uppercase;
@@ -836,7 +1232,7 @@
   }
 
   .titulos {
-    text-decoration: none;
+    text-decoration:underline;
     text-underline-position: under;
     padding-bottom: 30px;
     text-transform: uppercase;
@@ -1101,6 +1497,114 @@ display: block;
     border-radius: 10%;
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+
+  .Caixa12{
+    position: fixed;
+    top: 0; bottom: 35%; 
+    left:0; right:8%;
+    margin:auto;
+    z-index:1;
+    width: 359px;
+    height:197px;
+    display: none;
+    border-radius: 10%;
+  }
+
+  .Caixa13{
+    position: fixed;
+    top: 0; bottom: 35%; 
+    left:0; right:-1.6%;
+    margin:auto;
+    z-index:1;
+    width: 350px;
+    height:192px;
+    display: none;
+    border-radius: 10%;
+  }
+
+  .Caixa14{
+    position: fixed;
+    top: 0; bottom: 35%; 
+    left:9.5%; right:0;
+    margin:auto;
+    z-index:1;
+    width: 350px;
+    height:233px;
+    display: none;
+    border-radius: 10%;
+  }
+
+  .Caixa15{
+    position: fixed;
+    top: 0; bottom: 35%; 
+    left:18.4%; right:0;
+    margin:auto;
+    z-index:1;
+    width: 350px;
+    height:271px;
+    display: none;
+    border-radius: 10%;
+  }
+
+  .Caixa16{
+    position: fixed;
+    top: 0; bottom: 35%; 
+    left:28%; right:0;
+    margin:auto;
+    z-index:1;
+    width: 346px;
+    height:146px;
+    display: none;
+    border-radius: 10%;
+  }
+
+  .Caixa17{
+    position: fixed;
+    top: 0; bottom: 35%; 
+    left:0; right:29%;
+    margin:auto;
+    z-index:1;
+    width: 400px;
+    height:213px;
+    display: none;
+    border-radius: 10%;
+  }
+
+  .Caixa18{
+    position: fixed;
+    top: 0; bottom: 35%; 
+    left:0; right:26%;
+    margin:auto;
+    z-index:1;
+    width: 500px;
+    height:146px;
+    display: none;
+    border-radius: 10%;
+  }
+
+  .Caixa19{
+    position: fixed;
+    top: 0; bottom: 35%; 
+    left:0; right:1%;
+    margin:auto;
+    z-index:1;
+    width: 281px;
+    height:179px;
+    display: none;
+    border-radius: 10%;
+  }
+
+  .Caixa20{
+    position: fixed;
+    top: 0; bottom: 35%; 
+    left:0; right:3%;
+    margin:auto;
+    z-index:1;
+    width: 500px;
+    height:224px;
+    display: none;
+    border-radius: 10%;
   }
 
   #Nome1:after{

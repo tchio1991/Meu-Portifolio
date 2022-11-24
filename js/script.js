@@ -156,6 +156,78 @@
         function fechar9(){
           document.getElementById('Caixa9').style.display =  'none';
         }
+
+         // PopUp caixa12 html
+         function abrir12(){
+          document.getElementById('Caixa12').style.display = 'block';
+        }
+        function fechar12(){
+          document.getElementById('Caixa12').style.display =  'none';
+        }
+
+        // PopUp caixa13 CSS
+        function abrir13(){
+          document.getElementById('Caixa13').style.display = 'block';
+        }
+        function fechar13(){
+          document.getElementById('Caixa13').style.display =  'none';
+        }
+
+         // PopUp caixa14 JS
+         function abrir14(){
+          document.getElementById('Caixa14').style.display = 'block';
+        }
+        function fechar14(){
+          document.getElementById('Caixa14').style.display =  'none';
+        }
+
+        // PopUp caixa15 php
+        function abrir15(){
+          document.getElementById('Caixa15').style.display = 'block';
+        }
+        function fechar15(){
+          document.getElementById('Caixa15').style.display =  'none';
+        }
+
+        // PopUp caixa16 Java
+        function abrir16(){
+          document.getElementById('Caixa16').style.display = 'block';
+        }
+        function fechar16(){
+          document.getElementById('Caixa16').style.display =  'none';
+        }
+
+        // PopUp caixa17 .NET
+        function abrir17(){
+          document.getElementById('Caixa17').style.display = 'block';
+        }
+        function fechar17(){
+          document.getElementById('Caixa17').style.display =  'none';
+        }
+
+        // PopUp caixa18 SQL
+         function abrir18(){
+          document.getElementById('Caixa18').style.display = 'block';
+        }
+        function fechar18(){
+          document.getElementById('Caixa18').style.display =  'none';
+        }
+        
+        // PopUp caixa19 MySQL
+        function abrir19(){
+          document.getElementById('Caixa19').style.display = 'block';
+        }
+        function fechar19(){
+          document.getElementById('Caixa19').style.display =  'none';
+        }
+
+        // PopUp caixa20 C#
+        function abrir20(){
+          document.getElementById('Caixa20').style.display = 'block';
+        }
+        function fechar20(){
+          document.getElementById('Caixa20').style.display =  'none';
+        }
     
     // PopUp Dia, mês e ano.
     function abrir10(){
