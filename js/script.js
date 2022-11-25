@@ -326,3 +326,52 @@
       document.getElementById('DateR').innerHTML= Dia + "," + " " + Mes+ " " + "in" + " " + d + " " + " " + "in" + " " + y;
       document.getElementById('DateR').style.display =  'none';
       }
+      
+      // atalhos do teclado para chamar link
+      $(document).bind('keypress', function(event) {
+
+        if( event.which === 104 ) {
+          let href = document.getElementById("Menu2").getAttribute("href");
+          window.open(href, '_top');
+        }
+    });
+
+    $(document).bind('keypress', function(event) {
+
+      if( event.which === 112 ) {
+        let href = document.getElementById("Menu33").getAttribute("href");
+        window.open(href, '_top');
+      }
+  });
+
+  $(document).bind('keypress', function(event) {
+
+    if( event.which === 115 ) {
+      let href = document.getElementById("Menu34").getAttribute("href");
+      window.open(href, '_top');
+    }
+});
+
+$(document).bind('keypress', function(event) {
+
+  if( event.which === 109 ) {
+    let href = document.getElementById("Menu35").getAttribute("href");
+    window.open(href, '_top');
+  }
+});
+
+$(document).bind('keypress', function(event) {
+
+  if( event.which === 99 ) {
+    let href = document.getElementById("Menu36").getAttribute("href");
+    window.open(href, '_top');
+  }
+});
+
+$(document).bind('keypress', function(event) {
+
+  if( event.which === 105) {
+    let href = document.getElementById("Menu37").getAttribute("href");
+    window.open(href, '_top');
+  }
+});
