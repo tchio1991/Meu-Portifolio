@@ -4,16 +4,23 @@
         var today=new Date();
         var h=today.getHours();
         var m=today.getMinutes();
+        var ml=today.getMilliseconds();
         var d=today.getDate();
         var g=today.getMonth();
         var y=today.getFullYear();
 
+        if(d == 29 && g == 11 && h == 12 && m == 15) {
+          alert('Feliz aniversario Thiago Cardoso!!');
+        }
+        if(y == y) {
+          document.getElementById('ParaRodape').innerHTML= "Copyright" + " " + y;
+        }
         // adicione um zero na frente de números<10
         h=checkTime(h);
         m=checkTime(m);
         d=checkTime(d);
         g=checkTime(g);
-        document.getElementById('txt').innerHTML= h+":"+m + " " + d+"/"+(g+1)+"/"+y;
+        document.getElementById('txt').innerHTML= h+":"+m+ " " + d+"/"+(g+1)+"/"+y;
         t=setTimeout('startTime()',500);
         }
         function checkTime(i)
@@ -373,5 +380,29 @@ $(document).bind('keypress', function(event) {
   if( event.which === 105) {
     let href = document.getElementById("Menu37").getAttribute("href");
     window.open(href, '_top');
+  }
+});
+
+$(document).bind('keypress', function(event) {
+
+  if( event.which === 118) {
+    let href = document.getElementById("LinkCurriculo").getAttribute("href");
+    window.open(href, '_blank');
+  }
+});
+
+$(document).bind('keypress', function(event) {
+
+  if( event.which === 103) {
+    let href = document.getElementById("BTflutuante").getAttribute("href");
+    window.open(href, '_blank');
+  }
+});
+
+$(document).bind('keypress', function(event) {
+
+  if( event.which === 108) {
+    let href = document.getElementById("BTflutuante2").getAttribute("href");
+    window.open(href, '_blank');
   }
 });
