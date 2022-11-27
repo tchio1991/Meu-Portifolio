@@ -4,17 +4,29 @@
         var today=new Date();
         var h=today.getHours();
         var m=today.getMinutes();
-        var ml=today.getMilliseconds();
         var d=today.getDate();
         var g=today.getMonth();
         var y=today.getFullYear();
 
-        if(d == 29 && g == 11 && h == 12 && m == 15) {
+        if(d == 29 && g == 11 && h == 12 && m == 00) {
           alert('Feliz aniversario Thiago Cardoso!!');
+        } 
+        if (d == 25 && g == 12 && h == 12 && m == 00) {
+          alert('Feliz Natal!!');
+        }
+        if(d == 1 && (g+1) == 1 && y == y && h == 12 && m == 00) {
+          alert('Feliz ano novo' + ' ' + y+'!!');
         }
         if(y == y) {
           document.getElementById('ParaRodape').innerHTML= "Copyright" + " " + y;
+        } 
+        if(d == 1 && (g+1) == 1 && y == y) {
+          document.getElementById('ParaRodape').innerHTML= "Feliz ano novo" + " " + y+"!!";
         }
+        if(d == 25 && g == 12) {
+          document.getElementById('ParaRodape').innerHTML= "Feliz natal!!";
+        } 
+         
         // adicione um zero na frente de números<10
         h=checkTime(h);
         m=checkTime(m);
@@ -31,7 +43,7 @@
         }
         return i;
         }
-
+        
         /*Carregamento*/
         var i = setInterval(function () {
     
@@ -68,9 +80,177 @@
     }
     const titulo2 = document.getElementById('Nome2');
     Segundo(titulo2);
-    
 
-    }, 1300);
+    // Animação do texto Sobre mim
+    function Terceiro(elemento4){
+      const texto2Array = elemento4.innerHTML.split('');
+      elemento4.innerHTML = ' ';
+      texto2Array.forEach(function(letra4, j){   
+        
+      setTimeout(function(){
+          elemento4.innerHTML += letra4;
+      }, 100 * j)
+  
+    });
+  }
+  const SobreMim = document.getElementById('SobreMim1');
+  Terceiro(SobreMim);
+
+  function Quarto(elemento5){
+    const texto3Array = elemento5.innerHTML.split('');
+    elemento5.innerHTML = ' ';
+    texto3Array.forEach(function(letra5, i){   
+      
+    setTimeout(function(){
+        elemento5.innerHTML += letra5;
+    }, 30 * i)
+
+  });
+}
+const titulo3 = document.getElementById('SobreMim2');
+Quarto(titulo3);
+
+function Quinto(elemento6){
+  const texto6Array = elemento6.innerHTML.split('');
+  elemento6.innerHTML = ' ';
+  texto6Array.forEach(function(letra6, j){   
+    
+  setTimeout(function(){
+      elemento6.innerHTML += letra6;
+  }, 100 * j)
+
+});
+}
+const ContatoRodape = document.getElementById('H3contato');
+Quinto(ContatoRodape);
+
+function Sexto(elemento7){
+  const texto7Array = elemento7.innerHTML.split('');
+  elemento7.innerHTML = ' ';
+  texto7Array.forEach(function(letra7, j){   
+    
+  setTimeout(function(){
+      elemento7.innerHTML += letra7;
+  }, 250 * j)
+
+});
+}
+const AnoPagina = document.getElementById('ParaRodape');
+Sexto(AnoPagina);
+
+function Menu1(elementoMenu1){
+  const textoMenu1Array = elementoMenu1.innerHTML.split('');
+  elementoMenu1.innerHTML = ' ';
+  textoMenu1Array.forEach(function(letraMenu1, j){   
+    
+  setTimeout(function(){
+      elementoMenu1.innerHTML += letraMenu1;
+  }, 180 * j)
+
+});
+}
+const Amenu1 = document.getElementById('Menu2');
+Menu1(Amenu1);
+
+function Menu2(elementoMenu2){
+  const textoMenu2Array = elementoMenu2.innerHTML.split('');
+  elementoMenu2.innerHTML = ' ';
+  textoMenu2Array.forEach(function(letraMenu2, j){   
+    
+  setTimeout(function(){
+      elementoMenu2.innerHTML += letraMenu2;
+  }, 180 * j)
+
+});
+}
+const Amenu2 = document.getElementById('Menu33');
+Menu2(Amenu2);
+
+function Menu3(elementoMenu3){
+  const textoMenu3Array = elementoMenu3.innerHTML.split('');
+  elementoMenu3.innerHTML = ' ';
+  textoMenu3Array.forEach(function(letraMenu3, j){   
+    
+  setTimeout(function(){
+      elementoMenu3.innerHTML += letraMenu3;
+  }, 180 * j)
+
+});
+}
+const Amenu3 = document.getElementById('Menu34');
+Menu3(Amenu3);
+
+function Menu4(elementoMenu4){
+  const textoMenu4Array = elementoMenu4.innerHTML.split('');
+  elementoMenu4.innerHTML = ' ';
+  textoMenu4Array.forEach(function(letraMenu4, j){   
+    
+  setTimeout(function(){
+      elementoMenu4.innerHTML += letraMenu4;
+  }, 180 * j)
+
+});
+}
+const Amenu4 = document.getElementById('Menu35');
+Menu4(Amenu4);
+
+function Menu5(elementoMenu5){
+  const textoMenu5Array = elementoMenu5.innerHTML.split('');
+  elementoMenu5.innerHTML = ' ';
+  textoMenu5Array.forEach(function(letraMenu5, j){   
+    
+  setTimeout(function(){
+      elementoMenu5.innerHTML += letraMenu5;
+  }, 180 * j)
+
+});
+}
+const Amenu5 = document.getElementById('Menu36');
+Menu5(Amenu5);
+
+function Menu6(elementoMenu6){
+  const textoMenu6Array = elementoMenu6.innerHTML.split('');
+  elementoMenu6.innerHTML = ' ';
+  textoMenu6Array.forEach(function(letraMenu6, j){   
+    
+  setTimeout(function(){
+      elementoMenu6.innerHTML += letraMenu6;
+  }, 180 * j)
+
+});
+}
+const Amenu6 = document.getElementById('Menu37');
+Menu6(Amenu6);
+
+function Projetos6(elementoMenu7){
+  const textoMenu7Array = elementoMenu7.innerHTML.split('');
+  elementoMenu7.innerHTML = ' ';
+  textoMenu7Array.forEach(function(letraMenu7, j){   
+    
+  setTimeout(function(){
+      elementoMenu7.innerHTML += letraMenu7;
+  }, 180 * j)
+
+});
+}
+const Amenu7 = document.getElementById('TituloPrincipal');
+Projetos6(Amenu7);
+
+function Projetos7(elementoMenu8){
+  const textoMenu8Array = elementoMenu8.innerHTML.split('');
+  elementoMenu8.innerHTML = ' ';
+  textoMenu8Array.forEach(function(letraMenu8, j){   
+    
+  setTimeout(function(){
+      elementoMenu8.innerHTML += letraMenu8;
+  }, 150 * j)
+
+});
+}
+const Amenu8 = document.getElementById('LinkCurriculo');
+Projetos7(Amenu8);
+    
+}, 1300);
      
     /*Carregamento das imagens e janelas*/
     document.addEventListener('DOMContentLoaded', function(){
@@ -248,6 +428,19 @@
     var Dia = Day[dy];
     var M = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
     var Mes = M[g];
+
+    if(d == 29 && g == 11) {
+      document.getElementById('DateD').innerHTML= "Feliz aniversario, Thiago!!";
+      document.getElementById('DateD').style.display = 'block';
+    } 
+    if(d == 25 && g == 12) {
+      document.getElementById('DateD').innerHTML= "Feliz Natal!!";
+      document.getElementById('DateD').style.display = 'block';
+    }
+    if(d == 1 && (g+1) == 1 && y == y) {
+      document.getElementById('DateD').innerHTML= "Feliz Ano Novo!!";
+      document.getElementById('DateD').style.display = 'block';
+    }
       
     document.getElementById('DateD').innerHTML= Dia + "," + " " +d+ " " + "de" + " " + Mes + " " + " " + "de" + " " + y;
     document.getElementById('DateD').style.display = 'block';
@@ -281,6 +474,19 @@
     var M = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
     var Mes = M[g];
 
+    if(d == 29 && g == 11) {
+      document.getElementById('DateD').innerHTML= "Feliz aniversario, Thiago!!";
+      document.getElementById('DateD').style.display = 'block';
+    } 
+    if(d == 25 && g == 12) {
+      document.getElementById('DateD').innerHTML= "Feliz Natal!!";
+      document.getElementById('DateD').style.display = 'block';
+    }
+    if(d == 1 && (g+1) == 1 && y == y) {
+      document.getElementById('DateD').innerHTML= "Feliz Ano Novo!!";
+      document.getElementById('DateD').style.display = 'block';
+    }
+
     document.getElementById('DateD').innerHTML= Dia + "," + " " +d+ " " + "de" + " " + Mes + " " + " " + "de" + " " + y;
     document.getElementById('DateD').style.display =  'none';
     }
@@ -297,6 +503,19 @@
       var Dia = Day[dy];
       var M = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
       var Mes = M[g];
+
+      if(d == 29 && g == 11) {
+        document.getElementById('DateR').innerHTML= "Happy birthday Thiago!!";
+        document.getElementById('DateR').style.display = 'block';
+      } 
+      if(d == 25 && g == 12) {
+        document.getElementById('DateR').innerHTML= "Merry Christmas!!";
+        document.getElementById('DateR').style.display = 'block';
+      }
+      if(d == 1 && (g+1) == 1 && y == y) {
+        document.getElementById('DateR').innerHTML= "Happy New Year!!";
+        document.getElementById('DateR').style.display = 'block';
+      }
         
       document.getElementById('DateR').innerHTML= Dia + "," + " " + Mes+ " " + "in" + " " + d + " " + " " + "in" + " " + y;
       document.getElementById('DateR').style.display = 'block';
@@ -334,7 +553,7 @@
       document.getElementById('DateR').style.display =  'none';
       }
       
-      // atalhos do teclado para chamar link
+      // atalhos do teclado para chamar linkAncora
       $(document).bind('keypress', function(event) {
 
         if( event.which === 104 ) {

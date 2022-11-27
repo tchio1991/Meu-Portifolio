@@ -1753,7 +1753,7 @@ display: block;
     padding-top:15px;
     padding-bottom:15px;
     color:white !important
-  }
+  } 
  /* -------------------------*/
   
   .Caixa1{
@@ -2011,6 +2011,49 @@ display: block;
    }
    
    #Nome2:after{
+    content: '|';
+    margin-left: 2px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+
+   #SobreMim1:after{
+    content: '|';
+    margin-left: 2px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+   
+   #SobreMim2:after{
+    content: '|';
+    margin-left: 2px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+  
+   #H3contato:after{
+    content: '|';
+    margin-left: 2px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+
+   #ParaRodape:after{
+    content: '|';
+    margin-left: 2px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+   
+
+   #txt:after{
+    content: '.';
+    margin-left: 1px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+
+   #TituloPrincipal:after{
     content: '|';
     margin-left: 2px;
     opacity: 1;
