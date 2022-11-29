@@ -8,13 +8,13 @@
         var g=today.getMonth();
         var y=today.getFullYear();
 
-        if(d == 29 && g == 11 && h == 12 && m == 00) {
+        if(d == 29 && (g+1) == 11 && h == 12 && m == 10) {
           alert('Feliz aniversario Thiago Cardoso!!');
         } 
-        if (d == 25 && g == 12 && h == 12 && m == 00) {
+        if (d == 25 && (g+1) == 12 && y == y) {
           alert('Feliz Natal!!');
         }
-        if(d == 1 && (g+1) == 1 && y == y && h == 12 && m == 00) {
+        if(d == 1 && (g+1) == 1 && y == y && h == 12 && m == 10) {
           alert('Feliz ano novo' + ' ' + y+'!!');
         }
         if(y == y) {
@@ -23,10 +23,22 @@
         if(d == 1 && (g+1) == 1 && y == y) {
           document.getElementById('ParaRodape').innerHTML= "Feliz ano novo" + " " + y+"!!";
         }
-        if(d == 25 && g == 12) {
+        if(d == 25 && (g+1) == 12) {
           document.getElementById('ParaRodape').innerHTML= "Feliz natal!!";
         } 
-         
+        if(d == 29 && (g+1) == 11) {
+          document.getElementById('ParaRodape').innerHTML= "Feliz aniversario, Thiago!!";
+        }
+
+        if(d == 29 && (g+1) == 11 && y == y) {
+          document.getElementById('Nome1').innerHTML= "Feliz aniversario, Thiago!!";
+        } 
+        if(d == 25 && (g+1) == 12 && y == y) {
+          document.getElementById('Nome1').innerHTML= "Feliz Natal!!";
+        }
+        if(d == 1 && (g+1) == 1 && y == y) {
+          document.getElementById('Nome1').innerHTML= "Feliz Ano Novo!!";
+        }
         // adicione um zero na frente de números<10
         h=checkTime(h);
         m=checkTime(m);
@@ -428,19 +440,6 @@ Projetos7(Amenu8);
     var Dia = Day[dy];
     var M = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
     var Mes = M[g];
-
-    if(d == 29 && g == 11) {
-      document.getElementById('DateD').innerHTML= "Feliz aniversario, Thiago!!";
-      document.getElementById('DateD').style.display = 'block';
-    } 
-    if(d == 25 && g == 12) {
-      document.getElementById('DateD').innerHTML= "Feliz Natal!!";
-      document.getElementById('DateD').style.display = 'block';
-    }
-    if(d == 1 && (g+1) == 1 && y == y) {
-      document.getElementById('DateD').innerHTML= "Feliz Ano Novo!!";
-      document.getElementById('DateD').style.display = 'block';
-    }
       
     document.getElementById('DateD').innerHTML= Dia + "," + " " +d+ " " + "de" + " " + Mes + " " + " " + "de" + " " + y;
     document.getElementById('DateD').style.display = 'block';
@@ -474,19 +473,6 @@ Projetos7(Amenu8);
     var M = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
     var Mes = M[g];
 
-    if(d == 29 && g == 11) {
-      document.getElementById('DateD').innerHTML= "Feliz aniversario, Thiago!!";
-      document.getElementById('DateD').style.display = 'block';
-    } 
-    if(d == 25 && g == 12) {
-      document.getElementById('DateD').innerHTML= "Feliz Natal!!";
-      document.getElementById('DateD').style.display = 'block';
-    }
-    if(d == 1 && (g+1) == 1 && y == y) {
-      document.getElementById('DateD').innerHTML= "Feliz Ano Novo!!";
-      document.getElementById('DateD').style.display = 'block';
-    }
-
     document.getElementById('DateD').innerHTML= Dia + "," + " " +d+ " " + "de" + " " + Mes + " " + " " + "de" + " " + y;
     document.getElementById('DateD').style.display =  'none';
     }
@@ -503,19 +489,6 @@ Projetos7(Amenu8);
       var Dia = Day[dy];
       var M = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
       var Mes = M[g];
-
-      if(d == 29 && g == 11) {
-        document.getElementById('DateR').innerHTML= "Happy birthday Thiago!!";
-        document.getElementById('DateR').style.display = 'block';
-      } 
-      if(d == 25 && g == 12) {
-        document.getElementById('DateR').innerHTML= "Merry Christmas!!";
-        document.getElementById('DateR').style.display = 'block';
-      }
-      if(d == 1 && (g+1) == 1 && y == y) {
-        document.getElementById('DateR').innerHTML= "Happy New Year!!";
-        document.getElementById('DateR').style.display = 'block';
-      }
         
       document.getElementById('DateR').innerHTML= Dia + "," + " " + Mes+ " " + "in" + " " + d + " " + " " + "in" + " " + y;
       document.getElementById('DateR').style.display = 'block';
@@ -548,7 +521,7 @@ Projetos7(Amenu8);
       var Dia = Day[dy];
       var M = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
       var Mes = M[g];
-  
+      
       document.getElementById('DateR').innerHTML= Dia + "," + " " + Mes+ " " + "in" + " " + d + " " + " " + "in" + " " + y;
       document.getElementById('DateR').style.display =  'none';
       }
