@@ -2044,14 +2044,6 @@ display: block;
     opacity: 1;
     animation: pisca .7s infinite;
    }
-   
-
-   #txt:after{
-    content: '.';
-    margin-left: 1px;
-    opacity: 1;
-    animation: pisca .7s infinite;
-   }
 
    #TituloPrincipal:after{
     content: '|';
