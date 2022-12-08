@@ -332,6 +332,38 @@ Projetos7(Amenu8);
           document.getElementById('Caixa6').style.display =  'none';
         }
 
+        // PopUp caixa27
+        function abrir27(){
+          document.getElementById('Caixa27').style.display = 'block';
+        }
+        function fechar27(){
+          document.getElementById('Caixa27').style.display =  'none';
+        }
+
+         // PopUp caixa6
+         function abrir25(){
+          document.getElementById('Caixa25').style.display = 'block';
+        }
+        function fechar25(){
+          document.getElementById('Caixa25').style.display =  'none';
+        }
+
+        // PopUp caixa26
+        function abrir26(){
+          document.getElementById('Caixa26').style.display = 'block';
+        }
+        function fechar26(){
+          document.getElementById('Caixa26').style.display =  'none';
+        }
+
+        // PopUp caixa28
+        function abrir28(){
+          document.getElementById('Caixa28').style.display = 'block';
+        }
+        function fechar28(){
+          document.getElementById('Caixa28').style.display =  'none';
+        }
+
         // PopUp caixa7
         function abrir7(){
           document.getElementById('Caixa7').style.display = 'block';
