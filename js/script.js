@@ -46,6 +46,7 @@
         g=checkTime(g);
         document.getElementById('txt').innerHTML= h+":"+m+ " " + d+"/"+(g+1)+"/"+y;
         t=setTimeout('startTime()',500);
+        
         }
         function checkTime(i)
         {
