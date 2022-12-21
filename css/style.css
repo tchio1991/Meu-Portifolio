@@ -74,21 +74,6 @@
     -o-transform: translateY(-10px);
     transform: translateY(-10px);
     }
-    
-    #LinkCurriculo:active {
-      height:auto; 
-      width:auto;
-      font-size:20px;
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0);
-      -webkit-transition: 0.8s;
-      -o-transition: 0.8s;
-      -moz-transition: 0.8s;
-       transition: 0.8s;
-    }
 
     #BTflutuante {
       -webkit-transform: translateY(0);
@@ -108,21 +93,6 @@
       -ms-transform: translateY(-10px);
       -o-transform: translateY(-10px);
       transform: translateY(-10px);
-      }
-
-      #BTflutuante:active {
-        height:auto; 
-        width:auto;
-        font-size:20px;
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-transition: 0.8s;
-        -o-transition: 0.8s;
-        -moz-transition: 0.8s;
-         transition: 0.8s;
       }
 
     /*Janela da div POPUP Curriculo*/
@@ -270,20 +240,6 @@
     -o-transform: translateY(-6px);
     transform: translateY(-6px);
     }
-    
-    #Botao:active {
-      background-color:#033f70;
-      border: 1px solid white;
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0);
-      -webkit-transition: 0.8s;
-      -o-transition: 0.8s;
-      -moz-transition: 0.8s;
-       transition: 0.8s;
-    }
 
     /* Menu statico */
     #Menu2 {
@@ -313,24 +269,6 @@
     transform: translateY(-6px);
     }
     
-    #Menu2:active {
-      color:white;
-      height:auto;
-      width:175px; 
-      font-size: 20px;
-      position:relative;
-      padding:4px 4px 4px 4px;
-      border: 1px solid white;
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0);
-      -webkit-transition: 0.8s;
-      -o-transition: 0.8s;
-      -moz-transition: 0.8s;
-       transition: 0.8s;
-    }
 
     #Menu33 {
       color:white;
@@ -357,25 +295,6 @@
     -ms-transform: translateY(-6px);
     -o-transform: translateY(-6px);
     transform: translateY(-6px);
-    }
-    
-    #Menu33:active {
-      color:white;
-      height:auto;
-      width:175px; 
-      font-size: 20px;
-      position:relative;
-      padding:4px 4px 4px 4px;
-      border: 1px solid white;
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0);
-      -webkit-transition: 0.8s;
-      -o-transition: 0.8s;
-      -moz-transition: 0.8s;
-       transition: 0.8s;
     }
     
     #Menu34 {
@@ -405,25 +324,6 @@
     transform: translateY(-6px);
     }
     
-    #Menu34:active {
-      color:white;
-      height:auto;
-      width:175px; 
-      font-size: 20px;
-      position:relative;
-      padding:4px 4px 4px 4px;
-      border: 1px solid white;
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0);
-      -webkit-transition: 0.8s;
-      -o-transition: 0.8s;
-      -moz-transition: 0.8s;
-       transition: 0.8s;
-    }
-
     #Menu35 {
       color:white;
       height:auto;
@@ -449,25 +349,6 @@
     -ms-transform: translateY(-6px);
     -o-transform: translateY(-6px);
     transform: translateY(-6px);
-    }
-    
-    #Menu35:active {
-      color:white;
-      height:auto;
-      width:175px; 
-      font-size: 20px;
-      position:relative;
-      padding:4px 4px 4px 4px;
-      border: 1px solid white;
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0);
-      -webkit-transition: 0.8s;
-      -o-transition: 0.8s;
-      -moz-transition: 0.8s;
-       transition: 0.8s;
     }
 
     #Menu36 {
@@ -496,25 +377,6 @@
     -o-transform: translateY(-6px);
     transform: translateY(-6px);
     }
-    
-    #Menu36:active {
-      color:white;
-      height:auto;
-      width:175px; 
-      font-size: 20px;
-      position:relative;
-      padding:4px 4px 4px 4px;
-      border: 1px solid white;
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0);
-      -webkit-transition: 0.8s;
-      -o-transition: 0.8s;
-      -moz-transition: 0.8s;
-       transition: 0.8s;
-    }
 
     #Menu37 {
       color:white;
@@ -542,26 +404,7 @@
     -o-transform: translateY(-6px);
     transform: translateY(-6px);
     }
-    
-    #Menu37:active {
-      color:white;
-      height:auto;
-      width:175px; 
-      font-size: 20px;
-      position:relative;
-      padding:4px 4px 4px 4px;
-      border: 1px solid white;
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0);
-      -webkit-transition: 0.8s;
-      -o-transition: 0.8s;
-      -moz-transition: 0.8s;
-       transition: 0.8s;
-    }
-
+  
     /*Relogio*/
     #txt {
       color:white;
@@ -589,25 +432,6 @@
     -o-transform: translateY(-6px);
     transform: translateY(-6px);
     }
-
-    #txt:active {
-      color:white;
-      height:auto;
-      width:175px; 
-      font-size: 20px;
-      padding:4px 4px 4px 4px;
-      position:relative;
-      border: 1px solid white;
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0);
-      -webkit-transition: 0.8s;
-      -o-transition: 0.8s;
-      -moz-transition: 0.8s;
-       transition: 0.8s;
-    }
     /* Menu statico */
 
 
@@ -634,21 +458,6 @@
     transform: translateY(-10px);
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-   }
-   
-   .foto-perfil:active {
-    height:250px;
-    width:auto;
-    border-radius: 50%;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transition: 0.8s;
-    -o-transition: 0.8s;
-    -moz-transition: 0.8s;
-    transition: 0.8s;
    }
 
    /*Carregamento da imagem do perfil*/
@@ -1687,18 +1496,6 @@
     transform: translateY(-10px);
    }
 
-   #BTflutuante:active {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transition: 0.8s;
-    -o-transition: 0.8s;
-    -moz-transition: 0.8s;
-    transition: 0.8s;
-   }
-
    #BTflutuante2 {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -1718,19 +1515,6 @@
     -o-transform: translateY(-10px);
     transform: translateY(-10px);
    }
-
-   #BTflutuante2:active {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transition: 0.8s;
-    -o-transition: 0.8s;
-    -moz-transition: 0.8s;
-    transition: 0.8s;
-   }
-
 
    .icones {
     padding-left: 20px;
