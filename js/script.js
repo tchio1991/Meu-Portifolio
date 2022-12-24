@@ -14,7 +14,7 @@
         if (d == 25 && (g+1) == 12 && y == y) {
           alert('Feliz Natal!!');
         }
-        if(d == 1 && (g+1) == 1 && y == y && h == 12 && m == 10) {
+        if(d == 1 && (g+1) == 1 && y == y) {
           alert('Feliz ano novo' + ' ' + y+'!!');
         }
         if(y == y) {
