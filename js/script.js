@@ -460,6 +460,51 @@ Projetos7(Amenu8);
         function fechar20(){
           document.getElementById('Caixa20').style.display =  'none';
         }
+
+        // Caixa Idioma
+        function abrirIdioma(){
+          document.getElementById('CaixaIdioma').innerHTML= "Mudar idioma da pagina para inglês. . .";
+          document.getElementById('CaixaIdioma').style.display = 'block';
+          // Animação do texto idioma
+          function Animation(elementoIdioma){
+          const textoArray = elementoIdioma.innerHTML.split('');
+          elementoIdioma.innerHTML = ' ';
+          textoArray.forEach(function(letraIdioma, j){   
+        
+          setTimeout(function(){
+          elementoIdioma.innerHTML += letraIdioma;
+          }, 30 * j)
+          });
+          }
+         const AnimationIdioma = document.getElementById('CaixaIdioma');
+         Animation(AnimationIdioma);
+        }
+        function fecharIdioma(){
+          document.getElementById('CaixaIdioma').style.display =  'none';
+        }
+
+        // Caixa Idioma2
+        function abrirIdioma2(){
+          document.getElementById('IdiomaIngles').innerHTML= "Back to Portuguese language. . .";
+          document.getElementById('IdiomaIngles').style.display = 'block';
+          // Animação do texto idioma
+          function Animation(elementoIdiomaIngles){
+          const textoArray = elementoIdiomaIngles.innerHTML.split('');
+          elementoIdiomaIngles.innerHTML = ' ';
+          textoArray.forEach(function(letraIdiomaIngles, g){   
+        
+          setTimeout(function(){
+          elementoIdiomaIngles.innerHTML += letraIdiomaIngles;
+          }, 30 * g)
+          });
+          }
+         const AnimationIdiomaIngles = document.getElementById('IdiomaIngles');
+         Animation(AnimationIdiomaIngles);
+        }
+        function fecharIdioma2(){
+          document.getElementById('IdiomaIngles').style.display =  'none';
+        }
+        /*---------------------------------------------------------------*/
     
     // PopUp Dia, mês e ano.
     function abrir10(){
