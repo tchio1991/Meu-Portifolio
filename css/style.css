@@ -1511,6 +1511,62 @@
   body.loaded div:nth-child(3){ animation-delay: 2s }
   body.loaded div:nth-child(4){ animation-delay: 3s }
 
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #CaixaAnoNovo {
+    opacity: 0;
+    animation: fade-in 3.0s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #CaixaAnoNovo {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #CaixaAniversario {
+    opacity: 0;
+    animation: fade-in 3.0s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #CaixaAniversario {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
+  
+  @keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  }
+  
+  #CaixaNatal {
+    opacity: 0;
+    animation: fade-in 3.0s normal forwards ease-in-out;
+    animation-play-state: paused
+  }
+  
+  body.loaded #CaixaNatal {
+    animation-play-state: running
+  }
+  
+  body.loaded div:nth-child(2){ animation-delay: 1s }
+  body.loaded div:nth-child(3){ animation-delay: 2s }
+  body.loaded div:nth-child(4){ animation-delay: 3s }
   /*-----------------------------------------------*/
 
   /*Botão Flutuante*/
@@ -2089,6 +2145,9 @@ display: block;
     padding: 8px 10px;
     color:white;
     font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
   }
 
   .DateR{
@@ -2107,6 +2166,9 @@ display: block;
     padding: 8px 10px;
     color:white;
     font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
   }
 
   .CaixaIdioma {
@@ -2125,6 +2187,9 @@ display: block;
     padding: 8px 10px;
     color:white;
     font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
   }
 
   .IdiomaIngles {
@@ -2143,6 +2208,72 @@ display: block;
     padding: 8px 10px;
     color:white;
     font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+
+  .CaixaAnoNovo {
+    position: fixed;
+    top:0; bottom:0; 
+    left:0; right:0;
+    margin:auto;
+    z-index:100;
+    width:300px;
+    height:50px;
+    padding: 15px;
+    background-color:#277dee;
+    border-radius:5px;
+    border: 1px solid white;
+    display: none;
+    padding: 8px 10px;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+
+  .CaixaAniversario {
+    position: fixed;
+    top:0; bottom:0; 
+    left:0; right:0;
+    margin:auto;
+    z-index:100;
+    width:350px;
+    height:50px;
+    padding: 15px;
+    background-color:#277dee;
+    border-radius:5px;
+    border: 1px solid white;
+    display: none;
+    padding: 8px 10px;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+
+  .CaixaNatal {
+    position: fixed;
+    top:0; bottom:0; 
+    left:0; right:0;
+    margin:auto;
+    z-index:100;
+    width:350px;
+    height:50px;
+    padding: 15px;
+    background-color:#277dee;
+    border-radius:5px;
+    border: 1px solid white;
+    display: none;
+    padding: 8px 10px;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
   }
 
   #DateD:after{

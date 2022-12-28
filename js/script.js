@@ -4,19 +4,11 @@
         var today=new Date();
         var h=today.getHours();
         var m=today.getMinutes();
+        var s=today.getSeconds();
         var d=today.getDate();
         var g=today.getMonth();
         var y=today.getFullYear();
 
-        if(d == 29 && (g+1) == 11 && h == 12 && m == 10) {
-          alert('Feliz aniversario Thiago Cardoso!!');
-        } 
-        if (d == 25 && (g+1) == 12 && y == y) {
-          alert('Feliz Natal!!');
-        }
-        if(d == 1 && (g+1) == 1 && y == y) {
-          alert('Feliz ano novo' + ' ' + y+'!!');
-        }
         if(y == y) {
           document.getElementById('ParaRodape').innerHTML= "Copyright" + " " + y;
         } 
@@ -29,16 +21,21 @@
         if(d == 29 && (g+1) == 11) {
           document.getElementById('ParaRodape').innerHTML= "Feliz aniversario, Thiago!!";
         }
-
-        if(d == 29 && (g+1) == 11 && y == y) {
-          document.getElementById('Nome1').innerHTML= "Feliz aniversario, Thiago!!";
-        } 
-        if(d == 25 && (g+1) == 12 && y == y) {
-          document.getElementById('Nome1').innerHTML= "Feliz Natal!!";
-        }
         if(d == 1 && (g+1) == 1 && y == y) {
-          document.getElementById('Nome1').innerHTML= "Feliz Ano Novo!!";
+          document.getElementById('CaixaAnoNovo').style.display = 'block';
         }
+        if(d == 29 && (g+1) == 11 && y == y) {
+          document.getElementById('CaixaAniversario').style.display = 'block';
+        }
+        if(d == 25 && (g+1) == 12 && y == y) {
+          document.getElementById('CaixaNatal').style.display = 'block';
+        }
+        if(s > 0 && s < 30) {
+          document.getElementById('CaixaAnoNovo').style.display = 'none';
+          document.getElementById('CaixaAniversario').style.display = 'none';
+          document.getElementById('CaixaNatal').style.display = 'none';
+        }
+
         // adicione um zero na frente de números<10
         h=checkTime(h);
         m=checkTime(m);
@@ -64,6 +61,48 @@
   
         document.getElementById("loading").style.display = "none";
         document.getElementById("conteudo").style.display = "inline";
+        
+        // Animação do texto Natal
+        function Animation(ElementoNatal){
+        const textoArray = ElementoNatal.innerHTML.split('');
+        ElementoNatal.innerHTML = ' ';
+        textoArray.forEach(function(letraNatal, j){   
+        
+        setTimeout(function(){
+          ElementoNatal.innerHTML += letraNatal;
+          }, 100 * j)
+          });
+          }
+         const AnimationNatal = document.getElementById('CaixaNatal');
+         Animation(AnimationNatal);
+
+        // Animação do texto Aniversario
+        function Animation(ElementoAniversario){
+          const textoArray = ElementoAniversario.innerHTML.split('');
+          ElementoAniversario.innerHTML = ' ';
+          textoArray.forEach(function(letraAniversario, j){   
+        
+          setTimeout(function(){
+            ElementoAniversario.innerHTML += letraAniversario;
+          }, 100 * j)
+          });
+          }
+         const AnimationAniversario = document.getElementById('CaixaAniversario');
+         Animation(AnimationAniversario);
+
+        // Animação do texto Ano Novo
+        function Animation(ElementoAnoNovo){
+          const textoArray = ElementoAnoNovo.innerHTML.split('');
+          ElementoAnoNovo.innerHTML = ' ';
+          textoArray.forEach(function(letraAnoNovo, j){   
+        
+          setTimeout(function(){
+            ElementoAnoNovo.innerHTML += letraAnoNovo;
+          }, 100 * j)
+          });
+          }
+         const AnimationAnoNovo = document.getElementById('CaixaAnoNovo');
+         Animation(AnimationAnoNovo);
       
         // Animação No texto
          function Primeiro(elemento2){
@@ -537,7 +576,6 @@ Projetos7(Amenu8);
   const Animation1 = document.getElementById('DateD');
   Animation(Animation1);
     }
-    
     
     function fechar10(){
     var today=new Date();
