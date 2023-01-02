@@ -40,8 +40,8 @@
         h=checkTime(h);
         m=checkTime(m);
         d=checkTime(d);
-        g=checkTime(g);
-        document.getElementById('txt').innerHTML= h+":"+m+ " " + d+"/"+(g+1)+"/"+y;
+        g=checkTime2(g);
+        document.getElementById('txt').innerHTML= h+":"+m+ " " + d+"/"+ (g+1) +"/"+y;
         t=setTimeout('startTime()',500);
         
         }
@@ -53,7 +53,15 @@
         }
         return i;
         }
-        
+        function checkTime2(j) 
+        {
+          if (j < 10) 
+          {
+            j = "0";
+          }
+          return j;
+        }
+
         /*Carregamento*/
         var i = setInterval(function () {
     
