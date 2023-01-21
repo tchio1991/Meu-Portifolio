@@ -309,7 +309,7 @@ function Projetos7(elementoMenu8){
 }
 const Amenu8 = document.getElementById('LinkCurriculo');
 Projetos7(Amenu8);
-    
+
 }, 1300);
      
     /*Carregamento das imagens e janelas*/

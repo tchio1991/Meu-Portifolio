@@ -1735,6 +1735,12 @@ display: block;
     color:white;
   }
 
+  #h5contato {
+    padding-bottom:90px;
+    margin-bottom: 0px;
+    color:white;
+  }
+
   #LinkContato {
     color:rgb(187, 219, 247);
     text-decoration:none;
