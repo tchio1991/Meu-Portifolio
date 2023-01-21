@@ -685,7 +685,7 @@ $(document).bind('keypress', function(event) {
 
 $(document).bind('keypress', function(event) {
 
-  if( event.which === 99 ) {
+  if( event.which === 101 ) {
     let href = document.getElementById("Menu36").getAttribute("href");
     window.open(href, '_top');
   }
