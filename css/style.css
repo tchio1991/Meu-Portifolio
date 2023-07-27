@@ -1796,12 +1796,12 @@ display: block;
 
   .Caixa3{
     position: fixed;
-    top: 10%; bottom: 0; 
-    left:0; right:38%;
+    top: 14%; bottom: 0; 
+    left:0; right:29.5%;
     margin:auto;
     z-index:100;
-    width: 283px;
-    height:400px;
+    width: 170px;
+    height:241px;
     padding: 15px;
     display: none;
     
@@ -1809,24 +1809,24 @@ display: block;
 
   .Caixa4{
     position: fixed;
-    top: 10%; bottom: 0; 
-    left:0; right:50%;
+    top: 47%; bottom: 0; 
+    left:0; right:34%;
     margin:auto;
     z-index:100;
-    width: 500px;
-    height:226px;
+    width:300px;
+    height:135px;
     padding: 15px;
     display: none;
   }
 
   .Caixa5{
     position: fixed;
-    top: 5%; bottom: 0; 
-    left:50%; right:0;
+    top: 29%; bottom: 0; 
+    left:30%; right:0;
     margin:auto;
     z-index:100;
-    width: 600px;
-    height:399px;
+    width: 300px;
+    height: 200px;
     padding: 15px;
     display: none;
   }
