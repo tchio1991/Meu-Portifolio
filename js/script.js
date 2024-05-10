@@ -1,13 +1,12 @@
         // Relogio da pagina
-        function startTime()
-        {
-        var today=new Date();
-        var h=today.getHours();
-        var m=today.getMinutes();
-        var s=today.getSeconds();
-        var d=today.getDate();
-        var g=today.getMonth();
-        var y=today.getFullYear();
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          var d = today.getDate();
+          var g = today.getMonth();
+          var y = today.getFullYear();
 
         if(y == y) {
           document.getElementById('ParaRodape').innerHTML= "Copyright" + " " + y;
@@ -36,31 +35,21 @@
           document.getElementById('CaixaNatal').style.display = 'none';
         }
 
-        // adicione um zero na frente de números<10
-        h=checkTime(h);
-        m=checkTime(m);
-        d=checkTime(d);
-        g=checkTime2(g);
-        document.getElementById('txt').innerHTML= h+":"+m+ " " + d+"/"+ (g+1) +"/"+y;
-        t=setTimeout('startTime()',500);
         
-        }
-        function checkTime(i)
-        {
-        if (i<10)
-        {
-        i="0" + i;
-        }
-        return i;
-        }
-        function checkTime2(j) 
-        {
-          if (j < 10) 
-          {
-            j = "0";
-          }
-          return j;
-        }
+        // Adiciona zero à frente de números menores que 10
+        h = checkTime(h);
+        m = checkTime(m);
+        d = checkTime(d);
+        g = checkTime(g + 1); // Corrigido para mostrar o mês corretamente (1 a 12)
+
+        document.getElementById('txt').innerHTML = h + ":" + m + " " + d + "/" + g + "/" + y;
+
+        setTimeout(startTime, 500); // Função direta em vez de string
+      }
+
+    function checkTime(i) {
+        return (i < 10) ? "0" + i : i; // Simplificação da função
+    }
 
         /*Carregamento*/
         var i = setInterval(function () {
